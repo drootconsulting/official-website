@@ -22,7 +22,7 @@ export const home1SliderProps = {
   spaceBetween: 0,
   loop: true,
   autoplay: {
-    delay: 1500,
+    delay: 3000,
   },
   effect: "creative",
   creativeEffect: {

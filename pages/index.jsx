@@ -62,6 +62,7 @@ const Index = () => {
   function scrollToTop() {
     test.current = true;
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
   }
 
 
@@ -80,6 +81,7 @@ const Index = () => {
               <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
               >
                 {/* image */}
+                {item.videoLink ? <video controls muted loop autoPlay src={item.videoLink} style={{position: 'absolute', width: '100%'}}/> :
                 <div
                   className="slide"
                   style={{
@@ -87,12 +89,13 @@ const Index = () => {
                     backgroundImage: `url(${item.backgroundImage})`
                   }}
                 />
+                }
                 {/* slide titles */}
                 <div className="slide-titles">
                   <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       {/* title */}
-                      <div className="titles dark">
+                      <div className="titles dark" style={{color:"white"}}>
                         <div className="label scrolla-element-anim-1">{item.label}</div>
                         <div className="title">
                           <span
