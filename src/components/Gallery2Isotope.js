@@ -44,13 +44,13 @@ const Gallery2Isotope = () => {
               onClick={handleFilterKeyChange("sorting-print")}
               data-filter="sorting-print"
             >
-              Print
+              Strategy
             </a>
             <a
               onClick={handleFilterKeyChange("sorting-photography")}
               data-filter="sorting-photography"
             >
-              Photography
+              Design
             </a>
             <a
               onClick={handleFilterKeyChange("sorting-branding")}
@@ -62,7 +62,7 @@ const Gallery2Isotope = () => {
               onClick={handleFilterKeyChange("sorting-art")}
               data-filter="sorting-art"
             >
-              Art
+              Technology
             </a>
           </div>
           {/* works items */}

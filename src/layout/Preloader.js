@@ -4,7 +4,7 @@ const Preloader = () => {
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="spinner-logo">
-            <img src="assets/images/drootlogoW.png" alt="" />
+            <img src="assets/images/drootlogoW.png" alt="logo" />
           </div>
         </div>
       </div>

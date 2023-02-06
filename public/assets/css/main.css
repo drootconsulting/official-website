@@ -88,7 +88,7 @@ body {
   margin: 0;
   padding: 0;
   height: auto !important;
-  background-color: #000000;
+  background-color: #000000 ;
   font-size: 18px;
   color: #c0c0c7;
   font-family: "Roboto", sans-serif;
@@ -96,6 +96,8 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;   
+ 
+ 
 }
 
 body.no-scroll {
@@ -926,6 +928,7 @@ hr {
 .vertical-center {
   display: table-cell;
   vertical-align: middle;
+  
 }
 
 .text-uppercase {
@@ -1063,14 +1066,16 @@ hr {
 
 .preloader .spinner-logo {
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   width: 120px;
   font-size: 0;
+  
 }
 
 .preloader .spinner-logo img {
   margin-bottom: 30px;
   max-width: 200%;
+ 
 }
 
 .preloader .spinner.spinner-line {

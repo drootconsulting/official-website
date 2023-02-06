@@ -23,6 +23,13 @@ const App = ({ Component, pageProps }) => {
         {/* Fonts */}
        
           {/* <link rel="preload" href="assets/css/main.css" as="style"/> */}
+          <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPlayfair+Display%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CMr+De+Haviland&display=swap"
+          type="text/css"
+          media="all"
+        />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         
         {/* CSS STYLES */}
        
@@ -63,14 +70,7 @@ const App = ({ Component, pageProps }) => {
           media="all"
         />
         
-      
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPlayfair+Display%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CMr+De+Haviland&display=swap"
-          type="text/css"
-          media="all"
-        />
+       
          <link
           rel="stylesheet"
           href="assets/css/main.css"
@@ -85,7 +85,7 @@ const App = ({ Component, pageProps }) => {
         <link rel="shortcut icon" href="assets/favicon_1.ico" type="image/x-icon" />
         {/* <link rel="icon" href="assets/favicon_1.ico" type="image/x-icon" /> */}
       </Head>
-      {loader && <Preloader />}
+      {/* {loader && <Preloader />} */}
       <Component {...pageProps} />
     </Fragment>
   );
