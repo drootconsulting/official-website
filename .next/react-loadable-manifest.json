@@ -1,14 +1,51 @@
 {
-  "home-portfolio.jsx -> ../src/components/PortfolioIsotope": {
-    "id": "home-portfolio.jsx -> ../src/components/PortfolioIsotope",
+  "gallery-2-column.jsx -> ../src/components/Gallery2Isotope": {
+    "id": 3903,
     "files": [
-      "static/chunks/src_components_PortfolioIsotope_js.js"
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/903.aaf138260b6f88c4.js"
+    ]
+  },
+  "gallery-3-column.jsx -> ../src/components/Gallery3Isotope": {
+    "id": 5287,
+    "files": [
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/287.f7d008beb85c60ea.js"
+    ]
+  },
+  "home-portfolio.jsx -> ../src/components/PortfolioIsotope": {
+    "id": 6499,
+    "files": [
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/499.3810c2ef26f6731f.js"
     ]
   },
   "index.jsx -> ../src/components/PortfolioIsotope": {
-    "id": "index.jsx -> ../src/components/PortfolioIsotope",
+    "id": 6499,
     "files": [
-      "static/chunks/src_components_PortfolioIsotope_js.js"
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/499.3810c2ef26f6731f.js"
+    ]
+  },
+  "works-2-column.jsx -> ../src/components/PortfolioIsotope": {
+    "id": 6499,
+    "files": [
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/499.3810c2ef26f6731f.js"
+    ]
+  },
+  "works-3-column.jsx -> ../src/components/Work3Isotope": {
+    "id": 4994,
+    "files": [
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/994.5d142ad54072c59f.js"
+    ]
+  },
+  "works-creative.jsx -> ../src/components/PortfolioIsotope": {
+    "id": 6499,
+    "files": [
+      "static/chunks/391.c6eeca109a092ca1.js",
+      "static/chunks/499.3810c2ef26f6731f.js"
     ]
   }
 }

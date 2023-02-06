@@ -50,7 +50,7 @@ const Header = () => {
   }
 
   return (
-    <header className="header">
+    <header className="header " >
       <div className="header__builder">
         {/* logo */}
         <div className="logo-image">

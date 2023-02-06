@@ -11,10 +11,21 @@ const App = ({ Component, pageProps }) => {
     }, 1000);
   }, []);
 
+  useEffect(() => {
+    
+    document.body.style.backgroundColor = "black";
+   
+  }, []);
+
   return (
     <Fragment>
       <Head>
         <title>Droot-Elevating Experiences</title>
+        <style jsx global>{`
+          body {
+            background-color: black;
+          }
+        `}</style>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,6 +34,7 @@ const App = ({ Component, pageProps }) => {
         {/* Fonts */}
        
           {/* <link rel="preload" href="assets/css/main.css" as="style"/> */}
+          
           <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPlayfair+Display%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CMr+De+Haviland&display=swap"
@@ -69,8 +81,7 @@ const App = ({ Component, pageProps }) => {
           type="text/css"
           media="all"
         />
-        
-       
+ 
          <link
           rel="stylesheet"
           href="assets/css/main.css"
@@ -85,8 +96,20 @@ const App = ({ Component, pageProps }) => {
         <link rel="shortcut icon" href="assets/favicon_1.ico" type="image/x-icon" />
         {/* <link rel="icon" href="assets/favicon_1.ico" type="image/x-icon" /> */}
       </Head>
-      {/* {loader && <Preloader />} */}
-      <Component {...pageProps} />
+    
+      {loader ? (
+        <>
+        <Preloader />
+        </>
+      ) : (
+        <>
+          {/* Your page content */}
+          <Component {...pageProps} />
+        </>
+      )}
+    
+      {/* {loader && <Preloader />}
+      <Component {...pageProps} /> */}
     </Fragment>
   );
 };
