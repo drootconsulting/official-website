@@ -2,8 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import AboutVideo from "../src/components/AboutVideo";
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
+import Partners from "../src/components/Partners";
 import { jsTestimonials } from "../src/sliderProps";
 const About = () => {
+  
   return (
     <Layout>
       <div className="wrapper">
@@ -433,11 +435,13 @@ const About = () => {
           </div>
         </div>
         {/* Section Partners */}
-        <div className="section section-inner m-partners">
+        <Partners description={true}/>
+        
+        {/* <div className="section section-inner m-partners">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* partners */}
+                {/* partners 
                 <div className="m-titles">
                   <h2
                     className="m-title scrolla-element-anim-1 scroll-animate"
@@ -516,7 +520,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Footer */}
       <Footer />

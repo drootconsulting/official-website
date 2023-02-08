@@ -9,12 +9,11 @@ function useScrollDirection() {
       // function to run on scroll
       const updateScrollDirection = () => {
           const scrollY = window.pageYOffset;
-          const direction = lastScrollY > 900 ? "down" : "up";
+          const direction = lastScrollY > 100 ? "down" : "up";
           if (direction !== scrollDirection) {
             setScrollDirection(direction);
           }
           lastScrollY = scrollY > 0 ? scrollY : 0;
-          console.log("lastScrollY", lastScrollY);
       };
       window.addEventListener("scroll", updateScrollDirection); // add event listener
       return () => {

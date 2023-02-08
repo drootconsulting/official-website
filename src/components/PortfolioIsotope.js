@@ -109,7 +109,7 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/started-n2_4-900x600.jpg"
+                          src="assets/images/card-downtown.jpg"
                           alt="The Dance"
                         />
                       </span>
