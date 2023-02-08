@@ -73,7 +73,7 @@ const Index = () => {
         <Swiper {...home1SliderProps} onReachEnd={e => {
           document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
         }} className="section hero-main-slider" autoplay={{
-          reverseDirection: false, 
+          reverseDirection: false,
           stopOnLastSlide: false
         }} >
           {
@@ -81,47 +81,56 @@ const Index = () => {
               <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
               >
                 {/* image */}
-                {item.videoLink ? <video controls muted loop autoPlay src={item.videoLink} style={{position: 'absolute', width: '100%'}}/> :
-                <div
-                  className="slide"
-                  style={{
-                    //backgroundImage: "url(assets/images/started-n26-1920x1080.jpg)",
-                    backgroundImage: `url(${item.backgroundImage})`
-                  }}
-                />
+
+                {item.videoLink ?
+                  <div className="slide" style={{margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#000', justifyContent: 'center', alignItems: 'center'}}>
+
+                    <video muted loop autoPlay src={item.videoLink} style={{width:'100%'}}/>
+                  </div>
+                  :
+                  <div
+                    className="slide background-image"
+                    style={{backgroundImage: `url(${item.backgroundImage})`, backgroundSize:"100% ",backgroundRepeat:"no-repeat",backgroundPosition:"center", backgroundColor:"#353535" }}
+                  />
                 }
                 {/* slide titles */}
-                <div className="slide-titles">
-                  <div className="row">
-                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      {/* title */}
-                      <div className="titles dark" style={{color:"white"}}>
-                        <div className="label scrolla-element-anim-1">{item.label}</div>
-                        <div className="title">
-                          <span
-                            className="title-inner splitting-text-anim-2"
-                            data-splitting=""
-                          >
-                            {item.title}
-                          </span>
+                {
+                  item.id !== 3 && (
+                    <div className="slide-titles">
+                      <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          {/* title */}
+                          <div className="titles dark" style={{ color: "white" }}>
+                            <div className="label scrolla-element-anim-1">{item.label}</div>
+                            <div className="title">
+                              <span
+                                className="title-inner splitting-text-anim-2"
+                                data-splitting=""
+                              >
+                                {item.title}
+                              </span>
+                            </div>
+                            <div className="subtitle scrolla-element-anim-1">
+                              {item.content}
+                            </div>
+                          </div>
+                          <div className="more-bts">
+                            <Link legacyBehavior href={item.projectLink}>
+                              <a
+                                data-splitting=""
+                                className="btn more-btn scrolla-element-anim-1"
+                              >
+                                see details
+                              </a>
+                            </Link>
+                          </div>
                         </div>
-                        <div className="subtitle scrolla-element-anim-1">
-                          {item.content}
-                        </div>
-                      </div>
-                      <div className="more-bts">
-                        <Link legacyBehavior href={item.projectLink}>
-                          <a
-                            data-splitting=""
-                            className="btn more-btn scrolla-element-anim-1"
-                          >
-                            see details
-                          </a>
-                        </Link>
                       </div>
                     </div>
-                  </div>
-                </div>
+
+                  )
+                }
+
               </SwiperSlide>
             ))}
 

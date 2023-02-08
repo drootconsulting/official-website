@@ -1,11 +1,36 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
+
+  useEffect(() => {
+      let lastScrollY = window.pageYOffset;
+      // function to run on scroll
+      const updateScrollDirection = () => {
+          const scrollY = window.pageYOffset;
+          const direction = lastScrollY > 900 ? "down" : "up";
+          if (direction !== scrollDirection) {
+            setScrollDirection(direction);
+          }
+          lastScrollY = scrollY > 0 ? scrollY : 0;
+          console.log("lastScrollY", lastScrollY);
+      };
+      window.addEventListener("scroll", updateScrollDirection); // add event listener
+      return () => {
+          window.removeEventListener("scroll", updateScrollDirection); // clean up
+      }
+  }, [scrollDirection]); // run when scroll direction changes
+
+  return scrollDirection;
+};
+
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [linkElements, setLinkElements] = useState(null);
   const [height, setHeight] = useState(null);
- 
+  const scrollDirection = useScrollDirection();
+
   const toggleFun = (e) => {
     
     const menu = document.querySelector(".menu-btn.full"),
@@ -53,7 +78,7 @@ const Header = () => {
     <header className="header " >
       <div className="header__builder">
         {/* logo */}
-        <div className="logo-image">
+        <div className="logo-image" style={{display: scrollDirection==="down"?'none':'block'}}>
           <Link legacyBehavior href="/">
             <a>
               <img src="assets/images/drootlogoW.png" alt="logo" />

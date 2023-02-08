@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[674],{1430:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/cutsomHook",function(){return _(7004)}])},7004:function(n,u,_){"use strict";_.r(u),_(7294)}},function(n){n.O(0,[774,888,179],function(){return n(n.s=1430)}),_N_E=n.O()}]);

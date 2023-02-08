@@ -1,22 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/about-two": "pages/about-two.js",
-  "/about": "pages/about.js",
-  "/api/hello": "pages/api/hello.js",
-  "/blog-single": "pages/blog-single.js",
-  "/blog": "pages/blog.js",
-  "/contacts": "pages/contacts.js",
-  "/cutsomHook": "pages/cutsomHook.js",
-  "/gallery-2-column": "pages/gallery-2-column.js",
-  "/gallery-3-column": "pages/gallery-3-column.js",
-  "/home-grid-fully-slider": "pages/home-grid-fully-slider.js",
-  "/home-grid-slider": "pages/home-grid-slider.js",
-  "/home-portfolio": "pages/home-portfolio.js",
-  "/": "pages/index.js",
-  "/work-single": "pages/work-single.js",
-  "/works-2-column": "pages/works-2-column.js",
-  "/works-3-column": "pages/works-3-column.js",
-  "/works-creative": "pages/works-creative.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
 }

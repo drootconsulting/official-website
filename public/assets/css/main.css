@@ -1194,7 +1194,7 @@ hr {
 
 /* - Cursor */
 
-.cursor {
+/* .cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -1224,7 +1224,7 @@ hr {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -khtml-border-radius: 100%;
-}
+} */
 
 .cursor.cursor-zoom {
   margin-top: -25px;
@@ -1235,6 +1235,9 @@ hr {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+/* -------new added styling------ */
+
+/* --------new added------ */
 /* - Swiper */
 
 .swiper-container {

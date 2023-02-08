@@ -28,7 +28,7 @@ export const home1SliderProps = {
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: ["-20%", 0, -1],
+      translate: ["0%", 0, -1],
     },
     next: {
       translate: ["100%", 0, 0],
