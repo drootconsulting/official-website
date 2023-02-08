@@ -83,51 +83,51 @@ const Index = () => {
                 {/* image */}
 
                 {item.videoLink ?
-                  <div className="slide" style={{margin: "auto", display: 'flex', width: '100vw', height: '100vh', backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', overflow:"hidden"}}>
-                    <video muted loop autoPlay src={item.videoLink}/>
+                  <div className="slide" style={{ margin: "auto", display: 'flex', width: '100vw', height: '100vh', backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>
+                    <video muted loop autoPlay src={item.videoLink} />
                   </div>
                   :
                   <div
-                    className="slide background-image " 
-                    style={{backgroundImage: `url(${item.backgroundImage})`,backgroundRepeat:"no-repeat",backgroundPosition:"center", backgroundColor:"#353535" }}
+                    className="slide background-image "
+                    style={{ backgroundImage: `url(${item.backgroundImage})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundColor: "#353535" }}
                   />
                 }
                 {/* slide titles */}
                 {
-                  // item.id !== 3 && (
-                  //   <div className="slide-titles">
-                  //     <div className="row">
-                  //       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  //         {/* title */}
-                  //         <div className="titles dark" style={{ color: "white" }}>
-                  //           <div className="label scrolla-element-anim-1">{item.label}</div>
-                  //           <div className="title">
-                  //             <span
-                  //               className="title-inner splitting-text-anim-2"
-                  //               data-splitting=""
-                  //             >
-                  //               {item.title}
-                  //             </span>
-                  //           </div>
-                  //           <div className="subtitle scrolla-element-anim-1">
-                  //             {item.content}
-                  //           </div>
-                  //         </div>
-                  //         <div className="more-bts">
-                  //           <Link legacyBehavior href={item.projectLink}>
-                  //             <a
-                  //               data-splitting=""
-                  //               className="btn more-btn scrolla-element-anim-1"
-                  //             >
-                               
-                  //             </a>
-                  //           </Link>
-                  //         </div>
-                  //       </div>
-                  //     </div>
-                  //   </div>
+                  <div className="slide-titles">
+                    <div className="row">
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        {/* title */}
+                        <div className="titles dark" style={{ color: item.id === 1 ? "#232323" : '#fff' }}>
+                          <div className="label scrolla-element-anim-1">{item.label}</div>
+                          <div
+                            className="title scrolla-element-anim-1 scroll-animate floating"
+                            data-animate="active"
+                          >
+                            <span
+                              className="title-inner splitting-text-anim-2" style={{fontWeight: 'bolder', fontFamily: 'helvetica'}}
+                              data-splitting=""
+                            >
+                              {item.title}
+                            </span>
+                          </div>
+                          <div className="subtitle scrolla-element-anim-1">
+                            {item.content}
+                          </div>
+                        </div>
+                        <div className="more-bts">
+                          <Link legacyBehavior href={item.projectLink}>
+                            <a
+                              data-splitting=""
+                              className="btn more-btn scrolla-element-anim-1"
+                            >
 
-                  // )
+                            </a>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 }
 
               </SwiperSlide>
@@ -156,7 +156,7 @@ const Index = () => {
                     className="m-title scrolla-element-anim-1 scroll-animate floating"
                     data-animate="active"
                   >
-                    Elevating Experiences
+                    Building Authentic Experiences
                   </div>
                 </div>
               </div>
@@ -166,9 +166,8 @@ const Index = () => {
                   data-animate="active"
                 >
                   <p>
-                    At Droot, we believe in the power of design, technology, and innovation to transform the way people<br /> interact with the world.
-
-                    We’re a team of creative thinkers, developers, and strategists  with a<br /> passion for helping businesses create
+                    At Droot, we believe in the power of design, technology, and innovation to transform the way people interact with the world.
+                    We’re a team of creative thinkers, developers, and strategists  with a passion for helping businesses create
                     engaging experiences that delight their customers.
                   </p>
                 </div>

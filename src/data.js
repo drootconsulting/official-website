@@ -3,34 +3,34 @@ export const data =[
     id: 1,
     label:"",
     videoLink:"assets/videos/v1.mp4",
-    content:"",
-    title:"",
+    content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    title:"ELEVATING EXPERIENCES",
     projectLink:"/work-single"
 },
 {
     id: 2,
     label:"",
-    backgroundImage:"assets/images/banner-1.jpg",
-    content:"",
-    title:"",
+    videoLink:"assets/videos/v11.mp4",
+    content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    title:"ELEVATING BRANDS",
     projectLink:"/work-single"
 },
-{
-    id: 3,
-    label:"",
-    videoLink:"assets/videos/v2.mp4",
-    content:"",
-    title:"",
-    projectLink:"/work-single"
-},
-{
-    id: 4,
-    label:"",
-    videoLink:"assets/videos/v3.mp4",
-    content:"",
-    title:"",
-    projectLink:"/work-single"
-},
+// {
+//     id: 3,
+//     label:"",
+//     videoLink:"assets/videos/v2.mp4",
+//     content:"",
+//     title:"",
+//     projectLink:"/work-single"
+// },
+// {
+//     id: 4,
+//     label:"",
+//     videoLink:"assets/videos/v3.mp4",
+//     content:"",
+//     title:"",
+//     projectLink:"/work-single"
+// },
 // {
 //     id: 3,
 //     label:"Art",

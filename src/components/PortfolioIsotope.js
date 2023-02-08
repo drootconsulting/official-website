@@ -77,7 +77,7 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/started-n12-900x1170.jpg"
+                          src="assets/images/card-downtown.jpg"
                           alt="Astronaut"
                         />
                       </span>
@@ -88,14 +88,14 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Photography
+                        Application Development
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
                         data-splitting="words"
                         data-animate="active"
                       >
-                        Astronaut
+                        The Downtown Club
                       </span>
                     </span>
                   </a>
@@ -109,7 +109,7 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/card-downtown.jpg"
+                          src="assets/images/jyoti.png"
                           alt="The Dance"
                         />
                       </span>
@@ -120,14 +120,14 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Art
+                        Brand Design
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
                         data-splitting="words"
                         data-animate="active"
                       >
-                        The Dance
+                        Bhaskar Jyoti
                       </span>
                     </span>
                   </a>
