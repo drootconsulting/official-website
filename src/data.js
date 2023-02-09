@@ -2,18 +2,18 @@ export const data =[
 {
     id: 1,
     label:"",
-    videoLink:"assets/videos/v1.mp4",
+    video_url:"assets/videos/v4.mp4",
     content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     title:"ELEVATING EXPERIENCES",
-    projectLink:"/work-single"
+    project_url:"/work-single"
 },
 {
     id: 2,
     label:"",
-    videoLink:"assets/videos/v11.mp4",
+    video_url:"assets/videos/v11.mp4",
     content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     title:"ELEVATING BRANDS",
-    projectLink:"/work-single"
+    project_url:"/work-single"
 },
 // {
 //     id: 3,
@@ -49,46 +49,66 @@ export const data =[
 // },
 ];
 
-export const partnerData=[
+export const clientData=[
     
     {
         id:1,
-        partnerLogoImage:"assets/images/aqueouss.jpg"
+        client_name:"Aqueouss",
+        image_url:"assets/images/aqueouss.png"
         
     },
     {
         id:2,
-        partnerLogoImage:"assets/images/bhaskar-jyoti.png"
+        client_name:"Bhaskar Jyoti",
+        image_url:"assets/images/bhaskar_jyoti.png"
         
     },
     {
         id:3,
-        partnerLogoImage:"assets/images/bigD.png"
+        client_name:"BigD",
+        image_url:"assets/images/big_d.png"
         
     },
     {
         id:4,
-        partnerLogoImage:"assets/images/elworld.png"
+        client_name:"Elworld",
+        image_url:"assets/images/el_-_world.png"
         
     },
     {
         id:5,
-        partnerLogoImage:"assets/images/imagine-png.png"
+        client_name:"Atom",
+        image_url:"assets/images/atom.png"
         
     },
     {
         id:6,
-        partnerLogoImage:"assets/images/nirmals.png"
+        client_name:"Nirmals",
+        image_url:"assets/images/nirmals_480.png"
         
     },
     {
         id:7,
-        partnerLogoImage:"assets/images/psds.png"
+        client_name:"Organic Kitchen",
+        image_url:"assets/images/organic_kitchen.png"
         
     },
     {
         id:8,
-        partnerLogoImage:"assets/images/aqueouss.jpg"
+        client_name:"Slnko",
+        image_url:"assets/images/slnko.png"
+        
+    },
+    {
+        id:9,
+        client_name:"Ultra",
+        image_url:"assets/images/ultra.png"
+        
+    },
+    {
+        id:10,
+        client_name:"Downtown",
+        image_url:"assets/images/downtown.png"
         
     }
 

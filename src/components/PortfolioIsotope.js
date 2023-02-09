@@ -39,11 +39,14 @@ const PortfolioIsotope = () => {
       <div className="section section-inner m-works">
         <div className="container">
           {/* filter */}
+          
           <div className="filter-links">
+          <Link legacyBehavior href="/work-single">
             <a onClick={handleFilterKeyChange("*")} data-filter="*">
-              All
+             PROJECTS
             </a>
-            <a
+            </Link>
+            {/* <a
               onClick={handleFilterKeyChange("sorting-print")}
               data-filter="sorting-print"
             >
@@ -60,7 +63,7 @@ const PortfolioIsotope = () => {
               data-filter="sorting-branding"
             >
               Strategies
-            </a>
+            </a> */}
             {/* <a
               onClick={handleFilterKeyChange("sorting-art")}
               data-filter="sorting-art"
@@ -77,8 +80,8 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/card-downtown.jpg"
-                          alt="Astronaut"
+                          src="assets/images/downtown-1.jpg"
+                          alt="Downtown"
                         />
                       </span>
                     </span>
@@ -109,8 +112,8 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/jyoti.png"
-                          alt="The Dance"
+                          src="assets/images/bhaskar-jyoti.jpg"
+                          alt="Bhaskar Jyoti"
                         />
                       </span>
                     </span>
@@ -144,8 +147,8 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/started-n19-900x900.jpg"
-                          alt="Melanin Goddess"
+                          src="assets/images/nirmals-3.jpg"
+                          alt="Nirmals"
                         />
                       </span>
                     </span>
@@ -169,7 +172,7 @@ const PortfolioIsotope = () => {
                 </Link>
               </div>
             </div>
-            <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-branding">
+            {/* <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-branding">
               <div
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
@@ -179,8 +182,8 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/started-n15-900x600.jpg"
-                          alt="Blue denim"
+                          src="assets/images/slnko-4.jpg"
+                          alt="Slnko"
                         />
                       </span>
                     </span>
@@ -203,7 +206,7 @@ const PortfolioIsotope = () => {
                   </a>
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-art">
               <div
                 className="works-item scrolla-element-anim-1 scroll-animate"
@@ -214,8 +217,8 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/started-n14_1-900x1080.jpg"
-                          alt="Negative space"
+                          src="assets/images/bigD-2.jpg"
+                          alt="BigD"
                         />
                       </span>
                     </span>
@@ -239,7 +242,42 @@ const PortfolioIsotope = () => {
                 </Link>
               </div>
             </div>
-            <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-print">
+            <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-branding">
+              <div
+                className="works-item scrolla-element-anim-1 scroll-animate"
+                data-animate="active"
+              >
+                <Link legacyBehavior href="/work-single">
+                  <a>
+                    <span className="image">
+                      <span className="img">
+                        <img
+                          src="assets/images/slnko-4.jpg"
+                          alt="Slnko"
+                        />
+                      </span>
+                    </span>
+                    <span className="desc">
+                      <span
+                        className="category splitting-text-anim-4 scroll-animate"
+                        data-splitting="chars"
+                        data-animate="active"
+                      >
+                        Branding
+                      </span>
+                      <span
+                        className="name splitting-text-anim-4 scroll-animate"
+                        data-splitting="words"
+                        data-animate="active"
+                      >
+                        Blue denim
+                      </span>
+                    </span>
+                  </a>
+                </Link>
+              </div>
+            </div>
+            {/* <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-print">
               <div
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
@@ -273,7 +311,7 @@ const PortfolioIsotope = () => {
                   </a>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

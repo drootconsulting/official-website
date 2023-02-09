@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/work-single": [
+    "/works-2-column": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/work-single.js"
+      "static/chunks/pages/works-2-column.js"
     ]
   },
   "ampFirstPages": []

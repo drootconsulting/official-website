@@ -1,12 +1,42 @@
-import {partnerData} from '../data';
+import {clientData} from '../data';
 import { useState,useEffect} from 'react';
 import Link from "next/link";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick-theme.css';
+
+const List =({client, index})=>{
+
+  const[isMouseOver, setIsMouseOver]=useState(false);
+
+  function MouseOver() {
+    setIsMouseOver(true);
+  }
+  function MouseOut(){
+    setIsMouseOver(false);
+  }
+
+  return(
+
+    <div
+      className= "partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate " 
+      data-animate="active" key={index} style={{ marginTop: "0.5rem", backgroundColor: isMouseOver?"#fff" : "#000", transition:"0.2s ease-in"
+      }}onMouseOver={MouseOver} onMouseOut={MouseOut} >
+      <div className="partners-item">
+        <div className="image">
+          <a target="_blank" href="#"  >
+            {!isMouseOver ? (client.client_name) :
+              (<img src={client.image_url}  alt={client.id} style={{opacity: isMouseOver? 1 : 0, transition:"1.5s ease-in"}}/>)
+            }
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const Partners = ({description}) => {
 
-  
   return (
     <div className="section section-inner m-partners">
       <div className="container">
@@ -27,18 +57,8 @@ const Partners = ({description}) => {
             <div className="partners-box">
               <div className="partners-items row">
                 {
-                  partnerData.map((item)=>(
-                        <div
-                        className="partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate"
-                        data-animate="active" key={item.id} style={{borderRight:"1px solid #323141"}} >
-                        <div className="partners-item">
-                          <div className="image">
-                            <a target="_blank" href="#">
-                              <img src={item.partnerLogoImage} style={{ backgroundColor: "#fff" }} alt={item.id} />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                  clientData.map((client, index)=>(
+                      <List client={client} index={index}/>
                   ))}
               </div>
             </div>

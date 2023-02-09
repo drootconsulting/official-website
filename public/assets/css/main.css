@@ -88,7 +88,7 @@ body {
   margin: 0;
   padding: 0;
   height: auto !important;
-  background-color: #000000 ;
+  background-color: #000 ;
   font-size: 18px;
   color: #c0c0c7;
   font-family: "Roboto", sans-serif;
@@ -123,7 +123,7 @@ a:active {
 }
 
 a:visited {
-  color: #eb6165;
+  /* color: #eb6165; */
 }
 
 a:hover {
@@ -270,13 +270,13 @@ strong {
 
 a {
   color: #fff;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   outline: none;
 }
 
 a:hover {
   text-decoration: none;
-  color: #eb6165;
+  /* color: #eb6165; */
 }
 
 a.btn,
@@ -1078,7 +1078,7 @@ hr {
 
 .preloader .spinner-logo img {
   margin-bottom: 30px;
-  max-width: 200%;
+  max-width: 100%;
 
  
 }
@@ -1194,7 +1194,7 @@ hr {
 
 /* - Cursor */
 
-/* .cursor {
+.cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -1224,7 +1224,7 @@ hr {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   -khtml-border-radius: 100%;
-} */
+}
 
 .cursor.cursor-zoom {
   margin-top: -25px;
@@ -3741,13 +3741,23 @@ body .hero-main-slider .swiper-pagination {
 
 .partners-item .image img {
   max-width: 100%;
-  max-height: 100px;
+  max-height: 130px;
 }
 
 .partners-item:hover .image {
   opacity: 1;
 }
 
+
+/* -----new added hover animate------ */
+
+.hover-animate{
+  background-color: #fff;
+  opacity: 0.5;
+  
+}
+
+/* ----new added----- */
 /**
 * Section Newslatter
 **/
@@ -3806,9 +3816,79 @@ body .hero-main-slider .swiper-pagination {
   color: #c0c0c7;
   font-weight: 700;
   text-decoration: none;
+  /* new added */
+  /* border: 1px solid white; */
+  /* --c: #fff;
+  line-height: 1.2em;
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, #0000 0)
+      0 var(--p, 0%),
+    conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0) 100%
+      var(--p, 0%);
+  background-size: var(--s, 0%) 200%;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in-out, background-position 0s; */
+  padding:10px;
+  transition: .5s;
+  
 }
 
 .filter-links a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: .3s;
+}
+
+.filter-links a:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: scale(0);
+  opacity: 0;
+  transition: .3s;
+  z-index: -1;
+}
+
+.filter-links a:hover {
+  color: #fff;
+}
+  .filter-links a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .filter-links a:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+
+/* ------new added ------*/
+
+/* .filter-links a:hover{
+  --p: 100%;
+  --s: calc(
+    100%
+  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  /* color: #000;
+  padding:10px; */
+/* }  */
+
+
+
+/* ----new added----- */
+
+/* .filter-links a:before {
   margin-top: -2px;
   content: "";
   position: absolute;
@@ -3822,9 +3902,9 @@ body .hero-main-slider .swiper-pagination {
   -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
   -o-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-}
+} */
 
-.filter-links a:hover .char,
+/* .filter-links a:hover .char,
 .filter-links a:hover .word {
   color: #fff;
 }
@@ -3835,7 +3915,7 @@ body .hero-main-slider .swiper-pagination {
 
 .filter-links a.active {
   color: #fff;
-}
+} */
 
 .works-items.classic .works-item a:after {
   content: "";

@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <ImageView />
       <div className="container-page">
         {/* Header */}
-        <Header />
+        <Header /> 
         {children}
       </div>
       <div className="cursor"></div>
