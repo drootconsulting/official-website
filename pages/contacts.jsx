@@ -1,7 +1,62 @@
+import { useState } from "react";
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import PageTitle from "../src/layout/PageTitle";
+import axios from 'axios';
+
 const Contacts = () => {
+  const [contactInfo, setContactInfo] = useState({
+    name:"",
+    email:"",
+    message:""
+  })
+
+  const handleInputChange=(e)=>{
+      setContactInfo({
+        ...contactInfo,
+        [e.target.name]:e.target.value
+      })
+
+      console.log(e.target.value, e.target.name)
+  }
+
+  const handleSubmit=(event)=>{
+      event.preventDefault();
+      console.log("trigger");
+      let data = {name:contactInfo.name, email:contactInfo.email, message:contactInfo.message}
+      fetch('/api/contactsApi', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then((res) => {
+        console.log("data", data);
+        console.log('Response received')
+        if (res.status === 200) {
+          console.log('Response succeeded!')
+          setContactInfo({
+            name:"",
+            email:"",
+            message:""
+          })
+        }
+      })
+    
+      // try {
+      //   console.log("inside try block");
+      //   const data = await axios.post('http://localhost:3000/api/contactsApi', {
+      //     name:contactInfo.name, email:contactInfo.email, message:contactInfo.message 
+      //   });
+      //   console.log("data", data);
+      //   console.log('Posted data successfully');
+      // } catch (error) {
+      //   console.error(error);
+      // }
+      console.log("contactInfo", contactInfo);
+  }
+
   return (
     <Layout>
       <div className="wrapper">
@@ -36,7 +91,7 @@ const Contacts = () => {
                 </div>
                 {/* contact form */}
                 <div className="contacts-form">
-                  <form id="cform" method="post">
+                  <form id="cform" method="post" onSubmit={handleSubmit}>
                     <div className="group">
                       <div
                         className="value scrolla-element-anim-1 scroll-animate"
@@ -46,6 +101,8 @@ const Contacts = () => {
                           type="text"
                           name="name"
                           placeholder="Full Name"
+                          value = {contactInfo.name}
+                          onChange={handleInputChange}
                         />
                       </div>
                     </div>
@@ -55,21 +112,23 @@ const Contacts = () => {
                         data-animate="active"
                       >
                         <input
-                          type="text"
+                          type="email"
                           name="email"
                           placeholder="Email Address"
+                          value=  {contactInfo.email}
+                          onChange={handleInputChange}
                         />
                       </div>
                     </div>
                     <div className="group full">
                       <div
                         className="value scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
+                        data-animate="active">
                         <textarea
                           name="message"
                           placeholder="Message"
-                          defaultValue={""}
+                          value =  {contactInfo.message}
+                          onChange={handleInputChange}
                         />
                       </div>
                     </div>
@@ -77,9 +136,9 @@ const Contacts = () => {
                       className="submit scrolla-element-anim-1 scroll-animate"
                       data-animate="active"
                     >
-                      <a href="#" className="btn">
+                      <button className="btn">
                         Submit
-                      </a>
+                      </button>
                     </div>
                   </form>
                   <div className="alert-success" style={{ display: "none" }}>
