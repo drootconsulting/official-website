@@ -2,7 +2,7 @@ export const data =[
 {
     id: 1,
     label:"",
-    video_url:"assets/videos/v4.mp4",
+    video_url:"assets/videos/v113.mp4",
     content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     title:"ELEVATING EXPERIENCES",
     project_url:"/work-single"
@@ -10,7 +10,7 @@ export const data =[
 {
     id: 2,
     label:"",
-    video_url:"assets/videos/v11.mp4",
+    video_url:"assets/videos/v1131.mp4",
     content:"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     title:"ELEVATING BRANDS",
     project_url:"/work-single"

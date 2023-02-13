@@ -1,6 +1,7 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
+import Image from 'next/image'
 const PortfolioIsotope = () => {
   // Isotope
   const isotope = useRef();
@@ -80,8 +81,9 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/downtown-1.jpg"
+                          src="/assets/images/downtown-1.jpg"
                           alt="Downtown"
+                          fill
                         />
                       </span>
                     </span>
@@ -112,8 +114,9 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/bhaskar-jyoti.jpg"
+                          src="/assets/images/bhaskar-jyoti.jpg"
                           alt="Bhaskar Jyoti"
+                          fill
                         />
                       </span>
                     </span>
@@ -147,8 +150,9 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/nirmals-3.jpg"
+                          src="/assets/images/nirmals-3.jpg"
                           alt="Nirmals"
+                          fill
                         />
                       </span>
                     </span>
@@ -217,8 +221,9 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/bigD-2.jpg"
+                          src="/assets/images/bigD-2.jpg"
                           alt="BigD"
+                          fill
                         />
                       </span>
                     </span>
@@ -252,8 +257,9 @@ const PortfolioIsotope = () => {
                     <span className="image">
                       <span className="img">
                         <img
-                          src="assets/images/slnko-4.jpg"
+                          src="/assets/images/slnko-4.jpg"
                           alt="Slnko"
+                          fill
                         />
                       </span>
                     </span>

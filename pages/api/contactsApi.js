@@ -22,14 +22,14 @@ export default function (req, res) {
 
     const mailData = {
         from:'drootdummy23@gmail.com',
-        to: 'mehak.dhawan@droot.in',
+        to: 'drootdummy23@gmail.com',
         subject: `Message From ${req.body.name}`,
         text: req.body.message,
-        html: `<div>Message sent from ${req.body.message} ${req.body.email}</div>`
+        html: `<div> Hi droot, </div>
+        <div>${req.body.message}</div>
+        <div>Thanks <br>${req.body.name}</div>
+        <div>Message sent from  ${req.body.email}</div>`
        }
-       console.log("mail data", mailData);
-
-
        transporter.sendMail(mailData, function (err, info) {
         console.log("sending email");
         if(err)

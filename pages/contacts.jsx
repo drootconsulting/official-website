@@ -17,7 +17,6 @@ const Contacts = () => {
         [e.target.name]:e.target.value
       })
 
-      console.log(e.target.value, e.target.name)
   }
 
   const handleSubmit=(event)=>{
@@ -44,16 +43,6 @@ const Contacts = () => {
         }
       })
     
-      // try {
-      //   console.log("inside try block");
-      //   const data = await axios.post('http://localhost:3000/api/contactsApi', {
-      //     name:contactInfo.name, email:contactInfo.email, message:contactInfo.message 
-      //   });
-      //   console.log("data", data);
-      //   console.log('Posted data successfully');
-      // } catch (error) {
-      //   console.error(error);
-      // }
       console.log("contactInfo", contactInfo);
   }
 

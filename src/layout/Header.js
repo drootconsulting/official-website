@@ -85,17 +85,27 @@ const Header = () => {
           </Link>
         </div>
         {/* menu btn */}
-        <a href="#" className="menu-btn full" onClick={(e) => toggleFun(e)}>
-          <span />
-        </a>
+        <div className="menu-btn">
+          <button  className="btnn">Menu</button> 
+            <div className="dropdown_menu dropdown_menu--animated  dropdown_menu-8">
+              <a href="/">Home</a>
+              <a href="/about">Our Story</a>
+              <a href="/works-2-column">Works</a>
+              <a href="/contacts">Contact Us</a>
+            </div>
+        </div>
+        {/* hover menu  */}
+       
+       
+
         {/* Menu Full Overlay */}
-        <div className="menu-full-overlay">
+        {/* <div className="menu-full-overlay">
           <div className="menu-full-container">
             <div className="container">
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
                   {/* menu full */}
-                  <div className="menu-full">
+                  {/* <div className="menu-full">
                     <ul className="menu-full">
                       <li
                         // className={`menu-item menu-item-has-children has-children ${subMenuOpened(
@@ -111,7 +121,7 @@ const Header = () => {
                         >
                           Home
                         </a>
-                        </Link>
+                        </Link> } }
                         {/* <ul className="sub-menu" style={subMenuHeight("home")}>
                           {/* <li className="menu-item">
                             <Link legacyBehavior href="/">
@@ -155,7 +165,7 @@ const Header = () => {
                               </a>
                             </Link>
                           </li>
-                        </ul> */}
+                        </ul> }
                       </li>
                       <li
                         // className={`menu-item menu-item-has-children has-children ${subMenuOpened(
@@ -194,7 +204,7 @@ const Header = () => {
                               </a>
                             </Link>
                           </li> 
-                        </ul> */}
+                        </ul> }
                       </li>
                       <li
                         // className={`menu-item menu-item-has-children has-children ${subMenuOpened(
@@ -264,7 +274,7 @@ const Header = () => {
                             </Link>
                           </li> 
                         </ul> */}
-                      </li>
+                      {/* </li>
                       <li className="menu-item">
                         <Link legacyBehavior href="/contacts">
                           <a
@@ -275,7 +285,7 @@ const Header = () => {
                             Contact
                           </a>
                         </Link>
-                      </li>
+                      </li> */}
                       {/* <li className="menu-item">
                         <Link legacyBehavior href="/blog">
                           <a
@@ -286,14 +296,14 @@ const Header = () => {
                           </a>
                         </Link>
                       </li> */}
-                    </ul>
+                    {/* </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* social */}
-          <div className="menu-social-links">
+          {/* <div className="menu-social-links">
             <a
               href="https://instagram.com/"
               target="blank"
@@ -326,9 +336,9 @@ const Header = () => {
             >
               Linkedin
             </a>
-          </div>
-        </div>
-      </div>
+          </div> */}
+         {/* </div> */}
+      </div> 
     </header>
   );
 };
