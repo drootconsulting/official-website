@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import AboutVideo from "../src/components/AboutVideo";
+// import AboutVideo from "../src/components/AboutVideo";
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import Partners from "../src/components/Partners";
@@ -125,51 +125,6 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i aria-hidden="true" className="fas fa-ad" />
-                      </div>
-                      <div className="name">Advertising</div>
-                      <div className="text">
-                        Employs an openly sponsored, non-personal message to
-                        promote or sell a product, service.
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i aria-hidden="true" className="fas fa-rocket" />
-                      </div>
-                      <div className="name">Optimization</div>
-                      <div className="text">
-                        Improving the quality and quantity of website traffic to
-                        a website or a web page from search.
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i aria-hidden="true" className="far fa-life-ring" />
-                      </div>
-                      <div className="name">Support</div>
-                      <div className="text">
-                        Services to assist customers in making cost effective
-                        and correct use of a product.
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -249,13 +204,13 @@ const About = () => {
           </div>
         </div>
         {/* Section Video Large */}
-        <AboutVideo />
+        {/* <AboutVideo /> */}
         {/* Section Team */}
-        <div className="section section-inner m-team">
+        {/* <div className="section section-inner m-team">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
-                {/* titles */}
+                {/* titles *
                 <div className="m-titles">
                   <h2
                     className="m-title scrolla-element-anim-1 scroll-animate"
@@ -266,7 +221,7 @@ const About = () => {
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* team */}
+                {/* team *
                 <div className="team-items row">
                   <div className="team-col col-xs-12 col-sm-12 col-md-6 col-lg-4">
                     <div
@@ -320,7 +275,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Section Testimonials */}
         <div className="section section-inner m-testimonials">
           <div className="container">

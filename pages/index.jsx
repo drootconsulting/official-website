@@ -1,24 +1,31 @@
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import Link from "next/link";
 import Layout from "../src/layout/Layout";
-import { home1SliderProps } from "../src/sliderProps";
 import dynamic from "next/dynamic";
 import Partners from "../src/components/Partners";
 import Footer from "../src/layout/Footer";
-import { data } from "../src/data";
-import { useEffect, useState, useRef, useMemo, useCallback } from "react";
-import HomePortfolio from "./home-portfolio";
+import { useEffect,useRef,} from "react";
+// import HomePortfolio from "./home-portfolio";
 //import { useIsInViewport } from "./cutsomHook";
-import ScrollToTop from "react-scroll-to-top";
-import { scroll } from "../util";
+// import ScrollToTop from "react-scroll-to-top";
+// import { scroll } from "../util";
 //import { useInViewport } from 'react-in-viewport';
 // import Splitting from "splitting";
+import Scomp from '../src/components/SwiperComponent'
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
   {
     ssr: false,
   }
 );
+
+
+
+const SwiperComp = dynamic(() => import('../src/components/SwiperComponent'), {
+  // loading: () => 'Loading...',
+  ssr: false,
+})
+
+
 const Index = () => {
 
   const isInViewport = useRef(false)
@@ -78,89 +85,11 @@ const Index = () => {
   return (
 
     <Layout>
-    <div className="wrapper" id="swipper"> 
-        {/* Section Description */}
-        {/* onReachEnd={e => {
-          document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
-        }} */}
-        <Swiper {...home1SliderProps}  onReachEnd={scrollIntoIntroView} className="section hero-main-slider" autoplay={{
-          reverseDirection: false,
-          stopOnLastSlide: false
-        }} >
-
-          
-          {
-            data.map((item, index) => (
-              <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
-              >
-                {/* image */}
-                {item.video_url ?
-                  <div className="slide" style={{ margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#000', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>
-                    <video muted loop autoPlay src={item.video_url} />
-                  </div>
-                  :
-                  <div
-                    className="slide background-image "
-                    style={{ backgroundImage: `url(${item.backgroundImage})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundColor: "#353535" }}
-                  />
-                }
-                {/* slide titles */}
-                {
-                  <div className="slide-titles">
-                    <div className="row">
-                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        {/* title */}
-                        <div className="titles dark" style={{ color: item.id === 1 ? "#232323" : '#fff' }}>
-                          <div className="label scrolla-element-anim-1">{item.label}</div>
-                          <div
-                            className="title scrolla-element-anim-1 scroll-animate floating"
-                            data-animate="active"
-                          >
-                            <span
-                              className="title-inner splitting-text-anim-2" style={{fontWeight: 'bolder', fontFamily: 'helvetica'}}
-                              data-splitting=""
-                            >
-                              {item.title}
-                            </span>
-                          </div>
-                          <div className="subtitle scrolla-element-anim-1">
-                            {item.content}
-                          </div>
-                        </div>
-                        <div className="more-bts">
-                          <Link legacyBehavior href={item.project_url}>
-                            <a
-                              data-splitting=""
-                              className="btn more-btn scrolla-element-anim-1"
-                            >
-
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                }
-
-              </SwiperSlide>
-            ))}
-
-          {/* pagination */}
-          <div
-            className="swiper-pagination scrolla-element-anim-1 scroll-animate swiper-pagination-bullets swiper-pagination-horizontal animate__active animate__animated"
-            data-animate="active"
-          />
-          {/* navigation */}
-          <div className="swiper-buttons">
-            <div className="swiper-button-prev" />
-            <div className="swiper-button-next" />
-          </div>
-        </Swiper>
-      </div>
+    <Scomp scrollIntoIntroView={scrollIntoIntroView}/>
       {/* Home page*/}
       {/* ref={componentRef} */}
-      <div id="home"  ref={componentRef} onClick={e => console.log(e)}>
-        <div className="section section-inner started-heading" onScroll={e => console.log(e)}>
+      <div id="home"  ref={componentRef}>
+        <div className="section section-inner started-heading" >
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-center col-lg-12">

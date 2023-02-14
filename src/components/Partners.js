@@ -1,9 +1,9 @@
 import {clientData} from '../data';
-import { useState,useEffect} from 'react';
-import Link from "next/link";
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css';
+import { useState} from 'react';
+// import Link from "next/link";
+// import Slider from "react-slick";
+// import 'slick-carousel/slick/slick.css'
+// import 'slick-carousel/slick/slick-theme.css';
 
 const List =({client, index})=>{
 
@@ -58,7 +58,7 @@ const Partners = ({description}) => {
               <div className="partners-items row">
                 {
                   clientData.map((client, index)=>(
-                      <List client={client} index={index}/>
+                      <List client={client} index={index} key={index}/>
                   ))}
               </div>
             </div>

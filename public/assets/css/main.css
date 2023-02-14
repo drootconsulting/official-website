@@ -3219,7 +3219,7 @@ body .hero-main-slider .swiper-pagination {
 
 .wrapper .section.started-heading {
   margin-top: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 28px;
 }
 
 .wrapper .section.started-heading + .section.section-inner.m-archive {
@@ -7573,7 +7573,7 @@ body
 
 .menu-btn{
   position: absolute;
-  top: 0;
+  top: 12px;
   right:0;
   width: 130px;
   height: auto;
@@ -7681,30 +7681,6 @@ body
     }
 }
 
-.menu-btn{
-
-  animation: reverse 400ms ease-in-out forwards;
-  transform-origin: bottom center;
-
-}
-
-@keyframes reverse {
-  0% {
-   opacity:1;
-     /* transform: translateZ(-200px) transLateY(-40px) */
-     transform: scaleY(1)
- }
-
- 80% {
-   opacity: 0.5;
-     /* transform: translateZ(-10px) transLateY(0px) */
-     transform: scaleY(0.5)
- }
- 100% {
-   opacity: 0;
-     /* transform: translateZ(0px) transLateY(0px) */
-     transform: scaleY(0)
- }
 
 
-}
+

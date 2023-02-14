@@ -1,7 +1,12 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
-import Image from 'next/image'
+import Image from 'next/image';
+import downtownPic from '../../public/assets/images/downtown-.webp';
+import bhaskarPic from '../../public/assets/images/bhaskar--jyoti.webp';
+import nirmalsPic from '../../public/assets/images/nirmals-.webp';
+import ultra from '../../public/assets/images/ultra.webp';
+import slnkoPic from '../../public/assets/images/slnko-.webp';
 const PortfolioIsotope = () => {
   // Isotope
   const isotope = useRef();
@@ -47,43 +52,20 @@ const PortfolioIsotope = () => {
              PROJECTS
             </a>
             </Link>
-            {/* <a
-              onClick={handleFilterKeyChange("sorting-print")}
-              data-filter="sorting-print"
-            >
-              Software Development
-            </a>
-            <a
-              onClick={handleFilterKeyChange("sorting-photography")}
-              data-filter="sorting-photography"
-            >
-             Design
-            </a>
-            <a
-              onClick={handleFilterKeyChange("sorting-branding")}
-              data-filter="sorting-branding"
-            >
-              Strategies
-            </a> */}
-            {/* <a
-              onClick={handleFilterKeyChange("sorting-art")}
-              data-filter="sorting-art"
-            >
-              Art
-            </a> */}
+           
           </div>
           {/* works items */}
           <div className="works-items row column-2-offset">
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-photography">
               <div className="works-item">
-                <Link legacyBehavior href="/work-single">
+                <Link legacyBehavior href="/downtown-work">
                   <a>
                     <span className="image">
                       <span className="img">
-                        <img
-                          src="/assets/images/downtown-1.jpg"
+                        <Image
+                          src={downtownPic}
                           alt="Downtown"
-                          fill
+                          style={{ height: '100%', width: '100%' }}
                         />
                       </span>
                     </span>
@@ -109,14 +91,14 @@ const PortfolioIsotope = () => {
             </div>
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-art">
               <div className="works-item">
-                <Link legacyBehavior href="/work-single">
+                <Link legacyBehavior href="/bhaskar-jyoti-work">
                   <a>
                     <span className="image">
                       <span className="img">
-                        <img
-                          src="/assets/images/bhaskar-jyoti.jpg"
+                        <Image
+                          src={bhaskarPic}
                           alt="Bhaskar Jyoti"
-                          fill
+                          style={{ height: '100%', width: '100%' }}
                         />
                       </span>
                     </span>
@@ -149,10 +131,10 @@ const PortfolioIsotope = () => {
                   <a>
                     <span className="image">
                       <span className="img">
-                        <img
-                          src="/assets/images/nirmals-3.jpg"
+                        <Image
+                          src={nirmalsPic}
                           alt="Nirmals"
-                          fill
+                          style={{ height: '100%', width: '100%' }}
                         />
                       </span>
                     </span>
@@ -176,54 +158,20 @@ const PortfolioIsotope = () => {
                 </Link>
               </div>
             </div>
-            {/* <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-branding">
-              <div
-                className="works-item scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <Link legacyBehavior href="/work-single">
-                  <a>
-                    <span className="image">
-                      <span className="img">
-                        <img
-                          src="assets/images/slnko-4.jpg"
-                          alt="Slnko"
-                        />
-                      </span>
-                    </span>
-                    <span className="desc">
-                      <span
-                        className="category splitting-text-anim-4 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Branding
-                      </span>
-                      <span
-                        className="name splitting-text-anim-4 scroll-animate"
-                        data-splitting="words"
-                        data-animate="active"
-                      >
-                        Blue denim
-                      </span>
-                    </span>
-                  </a>
-                </Link>
-              </div>
-            </div> */}
+            
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-art">
               <div
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <Link legacyBehavior href="/work-single">
+                <Link legacyBehavior href="/ultra-work">
                   <a>
                     <span className="image">
                       <span className="img">
-                        <img
-                          src="/assets/images/bigD-2.jpg"
-                          alt="BigD"
-                          fill
+                        <Image
+                          src={ultra}
+                          alt="ultra"
+                          style={{ height: '100%', width: '100%' }}
                         />
                       </span>
                     </span>
@@ -256,10 +204,10 @@ const PortfolioIsotope = () => {
                   <a>
                     <span className="image">
                       <span className="img">
-                        <img
-                          src="/assets/images/slnko-4.jpg"
-                          alt="Slnko"
-                          fill
+                        <Image
+                          src={slnkoPic}
+                          alt="slnko"
+                          style={{ height: '100%', width: '100%' }}
                         />
                       </span>
                     </span>
@@ -283,41 +231,7 @@ const PortfolioIsotope = () => {
                 </Link>
               </div>
             </div>
-            {/* <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-print">
-              <div
-                className="works-item scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <Link legacyBehavior href="/work-single">
-                  <a>
-                    <span className="image">
-                      <span className="img">
-                        <img
-                          src="assets/images/work-n3-900x900.jpg"
-                          alt="Ferris Wheel"
-                        />
-                      </span>
-                    </span>
-                    <span className="desc">
-                      <span
-                        className="category splitting-text-anim-4 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Print
-                      </span>
-                      <span
-                        className="name splitting-text-anim-4 scroll-animate"
-                        data-splitting="words"
-                        data-animate="active"
-                      >
-                        Ferris Wheel
-                      </span>
-                    </span>
-                  </a>
-                </Link>
-              </div>
-            </div> */}
+            
           </div>
         </div>
       </div>

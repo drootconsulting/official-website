@@ -1,14 +1,12 @@
 {
-  "home-portfolio.jsx -> ../src/components/PortfolioIsotope": {
-    "id": "home-portfolio.jsx -> ../src/components/PortfolioIsotope",
-    "files": [
-      "static/chunks/src_components_PortfolioIsotope_js.js"
-    ]
-  },
   "index.jsx -> ../src/components/PortfolioIsotope": {
     "id": "index.jsx -> ../src/components/PortfolioIsotope",
     "files": [
       "static/chunks/src_components_PortfolioIsotope_js.js"
     ]
+  },
+  "index.jsx -> ../src/components/SwiperComponent": {
+    "id": "index.jsx -> ../src/components/SwiperComponent",
+    "files": []
   }
 }
