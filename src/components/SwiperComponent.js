@@ -1,22 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { home1SliderProps } from "../sliderProps";
-import dynamic from "next/dynamic";
 import { data } from "../data";
-import { useEffect,useRef,} from "react";
-
-const SwipperComponent =({scrollIntoIntroView})=>{
-  
-
+const SwipperComponent =()=>{
    return(
+    <>
+    
     <div className="wrapper" id="swipper"> 
         {/* Section Description */}
-        {/* onReachEnd={e => {
-          document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
-        }} */}
         {/* onReachEnd={scrollIntoIntroView} */}
         <Swiper {...home1SliderProps}   className="section hero-main-slider" >
-
-          
           {
             data.map((item, index) => (
               <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
@@ -24,7 +16,7 @@ const SwipperComponent =({scrollIntoIntroView})=>{
                 {/* image */}
                 {item.video_url ?
                   <div className="slide" style={{ margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#0D0D0D', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>
-                    <video muted loop src={item.video_url} autoPlay/>
+                    <video muted loop src={item.video_url} autoPlay preload={'auto'} type={'video/mp4'}/>
                   </div>
                   :
                   <div
@@ -32,6 +24,7 @@ const SwipperComponent =({scrollIntoIntroView})=>{
                     style={{ backgroundImage: `url(${item.backgroundImage})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundColor: "#353535" }}
                   />
                 }
+                
                 {/* slide titles */}
                 {/* {
                   <div className="slide-titles">
@@ -74,10 +67,6 @@ const SwipperComponent =({scrollIntoIntroView})=>{
             ))}
 
           {/* pagination */}
-          {/* <div
-            className="swiper-pagination scrolla-element-anim-1 scroll-animate swiper-pagination-bullets swiper-pagination-horizontal animate__active animate__animated"
-            data-animate="active"
-          /> */}
           {/* navigation */}
           <div className="swiper-buttons">
             <div className="swiper-button-prev" />
@@ -85,6 +74,7 @@ const SwipperComponent =({scrollIntoIntroView})=>{
           </div>
         </Swiper>
       </div>
+      </>
    )
 
 }

@@ -127,7 +127,7 @@ const PortfolioIsotope = () => {
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <Link legacyBehavior href="/work-single">
+                <Link legacyBehavior href="/">
                   <a>
                     <span className="image">
                       <span className="img">
@@ -144,14 +144,14 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Branding
+                        Branding & Graphic Design
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
                         data-splitting="words"
                         data-animate="active"
                       >
-                        Melanin Goddess
+                        Nirmals
                       </span>
                     </span>
                   </a>
@@ -181,14 +181,14 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Art
+                        Branding & Web Development
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
                         data-splitting="words"
                         data-animate="active"
                       >
-                        Negative space
+                        Ultra
                       </span>
                     </span>
                   </a>
@@ -200,7 +200,7 @@ const PortfolioIsotope = () => {
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <Link legacyBehavior href="/work-single">
+                <Link legacyBehavior href="/slnko-work">
                   <a>
                     <span className="image">
                       <span className="img">
@@ -224,7 +224,7 @@ const PortfolioIsotope = () => {
                         data-splitting="words"
                         data-animate="active"
                       >
-                        Blue denim
+                        Slnko
                       </span>
                     </span>
                   </a>

@@ -6,7 +6,7 @@ import { mGalleryCarousel } from "../src/sliderProps";
 import Image from 'next/image';
 import baj1 from '../public/assets/images/baj1.webp';
 import baj2 from '../public/assets/images/baj2.webp';
-import baj3 from '../public/assets/images/baj3.webp';
+import baj33 from '../public/assets/images/baj33.jpg';
 import baj4 from '../public/assets/images/baj4.webp';
 import baj5 from '../public/assets/images/baj5.webp';
 import baj6 from '../public/assets/images/baj5.webp';
@@ -14,7 +14,7 @@ import baj6 from '../public/assets/images/baj5.webp';
 const WorkSingle = () => {
   return (
     <Layout>
-      <div className="wrapper">
+      <div className="wrapper" style={{backgroundColor:"#2f2f2f"}}>
         {/* Section Started Heading */}
         <div className="section section-inner started-heading">
           <div className="container">
@@ -33,7 +33,7 @@ const WorkSingle = () => {
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Astronaut
+                    Bhaskar Jyoti Solar
                   </div>
                 </div>
               </div>
@@ -51,8 +51,9 @@ const WorkSingle = () => {
               style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
             /> */}
             <Image className="img js-parallax"
-              src={baj1}
-              alt="baj1"
+              src={baj33}
+              alt="baj33"
+              
             />
           </div>
         </div>
@@ -130,13 +131,13 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n12-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
                           src={baj2}
                           alt="baj2"
-                          style={{width:"100%", height:"100%"}}
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
@@ -151,13 +152,13 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n15-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
-                          src={baj3}
-                          alt="baj3"
-                          style={{width:"100%", height:"100%"}}
+                          src={baj4}
+                          alt="baj4"
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
@@ -206,103 +207,7 @@ const WorkSingle = () => {
           </div>
         </div>
         {/* Section Gallery Carousel */}
-
-        <div className="section section-inner m-gallery">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n12-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <Image
-                          src={baj4}
-                          alt="baj4"
-                          style={{width:"100%", height:"100%"}}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n15-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <Image
-                          src={baj5}
-                          alt="baj5"
-                          style={{width:"100%", height:"100%"}}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div
-          className="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <div className="container">
-            <Swiper {...mGalleryCarousel} className="swiper-container">
-              <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n2_4.jpg" alt="Image #1" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n20.jpg" alt="Image #2" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n14.jpg" alt="Image #3" />
-                </SwiperSlide>
-              </div>
-            </Swiper>
-          </div>
-        </div> */}
         {/* Section Navigation */}
-        <div className="section section-inner m-page-navigation">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="h-titles h-navs">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <span
-                        className="nav-arrow scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
-                        Next Project
-                      </span>
-                      <span
-                        className="h-title splitting-text-anim-2 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Astronaut
-                      </span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <Footer />
     </Layout>

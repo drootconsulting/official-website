@@ -23,14 +23,14 @@ const WorkSingle = () => {
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
                     data-splitting="chars"
                     data-animate="active">
-                    Photography
+                    Rebranding and Web Development
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Astronaut
+                    Ultra
                   </div>
                 </div>
               </div>
@@ -47,10 +47,9 @@ const WorkSingle = () => {
               className="img js-parallax"
               style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
             /> */}
-            <Image className="img js-parallax"
-              src={u1}
-              alt="u1"
-            />
+            <video className="img js-parallax"
+              src="assets/videos/ultraVideo.mp4"
+              alt="u1" muted loop autoPlay/>
           </div>
         </div>
         {/* Section Details */}
@@ -101,14 +100,11 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
+                  <p align="justify">
+                  Ultrarate is a leading solar energy company in India, dedicated to providing innovative and smart energy management solutions to power various industries, residences, computer labs, and agriculture. As the company continues to grow and expand its services, they saw the need for a new brand identity that would better represent their brand and communicate their values to their customers.
+                  </p>
+                  <p align="justify">
+                  Our team was tasked with the complete rebranding of Ultrarate, including a new logo design, website design, and development, as well as the creation of brand collaterals such as business cards and brochures. The goal of the project was to create a brand that was modern, professional, and reflected Ultrarate's commitment to delivering high-quality solar energy solutions to their customers.
                   </p>
                 </div>
               </div>
@@ -119,7 +115,7 @@ const WorkSingle = () => {
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -127,7 +123,7 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n12-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
@@ -140,7 +136,7 @@ const WorkSingle = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -148,7 +144,7 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n15-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
@@ -183,19 +179,8 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
-                  </p>
-                  <p>
-                    Creativity is to discover a question that has never been
-                    asked. If one brings up an idiosyncratic question, the
-                    answer he gives will necessarily be unique as well.
+                  <p align="justify">
+                  The rebranding and web development project for Ultrarate was a complete success, delivering a new brand identity that better represents the company's values and capabilities. The new website and brand materials have helped Ultrarate to communicate their message more effectively and to build stronger relationships with their customers. Our team is proud to have been a part of Ultrarate's continued growth and success, and we look forward to working with them in the future.
                   </p>
                 </div>
               </div>
@@ -203,99 +188,7 @@ const WorkSingle = () => {
           </div>
         </div>
         {/* Section Gallery Carousel */}
-
-        <div className="section section-inner m-gallery">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n12-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <Image
-                          src={u4}
-                          alt="ultra"
-                          style={{width:"100%", height:"100%"}}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n15-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        {/* <video muted loop autoPlay src="assets/videos/ultraVideo.mp4"/> */}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div
-          className="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <div className="container">
-            <Swiper {...mGalleryCarousel} className="swiper-container">
-              <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n2_4.jpg" alt="Image #1" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n20.jpg" alt="Image #2" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n14.jpg" alt="Image #3" />
-                </SwiperSlide>
-              </div>
-            </Swiper>
-          </div>
-        </div> */}
         {/* Section Navigation */}
-        <div className="section section-inner m-page-navigation">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="h-titles h-navs">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <span
-                        className="nav-arrow scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
-                        Next Project
-                      </span>
-                      <span
-                        className="h-title splitting-text-anim-2 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Astronaut
-                      </span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <Footer />
     </Layout>

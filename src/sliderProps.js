@@ -20,8 +20,10 @@ SwiperCore.use([
 export const home1SliderProps = {
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: false,
-  autoplay: false,
+  loop: true,
+  autoplay: {
+    delay:3000
+  },
   effect: "creative",
   creativeEffect: {
     prev: {

@@ -2,6 +2,8 @@ import { Fragment, useEffect } from "react";
 import ImageView from "../components/ImageView";
 import { activeAnimation, initCursor } from "../utils";
 import Header from "./Header";
+import { useRouter } from "next/router";
+import ProjectHeader from "./ProjectHeader";
 const Layout = ({ children }) => {
   useEffect(() => {
     initCursor();
@@ -24,13 +26,13 @@ const Layout = ({ children }) => {
       type: "scroll",
     });
   }, []);
-
+  const router = useRouter();
   return (
     <Fragment>
       <ImageView />
-      <div className="container-page">
+      <div className="container-page" style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#000'}}>
         {/* Header */}
-        <Header /> 
+        {router.pathname==='/'? <Header/> : <ProjectHeader/>}
         {children}
       </div>
       <div className="cursor"></div>

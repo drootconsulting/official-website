@@ -1,6 +1,8 @@
+import { useRouter } from "next/router";
 const Footer = () => {
+  const router = useRouter();
   return (
-    <footer className="footer">
+    <footer className="footer"  style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#000'}}>
       <div className="footer__builder">
         <div className="container align-center">
           <div className="row">

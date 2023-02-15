@@ -4,7 +4,7 @@ import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import { mGalleryCarousel } from "../src/sliderProps";
 import Image from 'next/image';
-import downtownCards from '../public/assets/images/downtownCards.webp';
+import downtownCard1 from '../public/assets/images/downtownCard1.png';
 import downtownCycle from '../public/assets/images/downtownCycle.webp';
 import downtownDesc from '../public/assets/images/downtownDesc1.webp';
 import downtownDesc2 from '../public/assets/images/downtownDesc2.webp';
@@ -25,14 +25,14 @@ const WorkSingle = () => {
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
                     data-splitting="chars"
                     data-animate="active">
-                    Photography
+                    App Development
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Astronaut
+                    Downtown Club
                   </div>
                 </div>
               </div>
@@ -50,8 +50,8 @@ const WorkSingle = () => {
               style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
             /> */}
             <Image className="img js-parallax"
-              src={downtownDesc}
-              alt="downtownDesc"
+              src={downtownCard1}
+              alt="downtownCards"
             />
           </div>
         </div>
@@ -103,14 +103,8 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
+                  <p align="justify">
+                  Downtown is a mobile application that connects independent brands with consumers, providing a unique and personalized shopping experience. Our team has been working on this project for over a year, leveraging cutting-edge technology to deliver a seamless and user-friendly platform.
                   </p>
                 </div>
               </div>
@@ -121,7 +115,7 @@ const WorkSingle = () => {
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -129,20 +123,20 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n12-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
                           src={downtownCycle}
                           alt="downtown cycle"
-                          style={{width:"100%", height:"100%"}}
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -150,13 +144,13 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                       <a
-                        href="assets/images/started-n15-920x1080.jpg"
+                        href="/"
                         className="has-popup-image"
                       >
                         <Image
-                          src={downtownCards}
-                          alt="downtownCards"
-                          style={{ width: "100%", height: "100%" }}
+                          src={downtownCards2}
+                          alt="downtownCards2"
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
@@ -185,20 +179,17 @@ const WorkSingle = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
-                    It is not enough that we build products that function, that
-                    are understandable and usable, we also need to build
-                    products that bring joy and excitement, pleasure and fun,
-                    and, yes, beauty to people’s lives. Creativity is to
-                    discover a question that has never been asked. If one brings
-                    up an idiosyncratic question, the answer he gives will
-                    necessarily be unique as well.
+                  <p align="justify">
+                  Our efforts have paid off, and the result is a high-quality mobile application that provides a discovery-led 
+                  marketplace for independent brands in India. Downtown offers a reliable and stable platform for brands to 
+                  showcase their products and connect with consumers, and app intuitive user interface makes it easy for 
+                  consumers to discover and purchase products they love.
                   </p>
-                  <p>
+                  {/* <p>
                     Creativity is to discover a question that has never been
                     asked. If one brings up an idiosyncratic question, the
                     answer he gives will necessarily be unique as well.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -206,7 +197,7 @@ const WorkSingle = () => {
         </div>
         {/* Section Gallery Carousel */}
 
-        <div className="section section-inner m-gallery">
+        {/* <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -223,7 +214,7 @@ const WorkSingle = () => {
                         <Image
                           src={downtownCards2}
                           alt="downtownCards2"
-                          style={{ width: "100%", height: "100%" }}
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
@@ -244,7 +235,7 @@ const WorkSingle = () => {
                         <Image
                           src={downtownDesc2}
                           alt="downtownDesc2"
-                          style={{ width: "100%", height: "100%" }}
+                          style={{width:"100%", height:"auto"}}
                         />
                       </a>
                     </div>
@@ -253,7 +244,7 @@ const WorkSingle = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div
           className="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate"
           data-animate="active"
@@ -275,7 +266,7 @@ const WorkSingle = () => {
           </div>
         </div> */}
         {/* Section Navigation */}
-        <div className="section section-inner m-page-navigation">
+        {/* <div className="section section-inner m-page-navigation">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -301,7 +292,7 @@ const WorkSingle = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </Layout>
