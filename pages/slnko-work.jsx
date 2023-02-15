@@ -25,7 +25,7 @@ const WorkSingle = () => {
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
                     data-splitting="chars"
                     data-animate="active">
-                    Photography
+                    Design & Technology
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
@@ -62,12 +62,12 @@ const WorkSingle = () => {
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Envato
+                    <strong>Client</strong> Slnko Energy
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Photography
+                    <strong>Category</strong> Design & Technology
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
@@ -77,7 +77,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> bslthemes.com
+                    <strong>Website</strong> <a href="https://slnkoenergy.com/" target="_blank">slnkoenergy.com</a>
                   </div>
                 </div>
               </div>
@@ -122,16 +122,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={slnkoPic4}
                           alt="slnko cycle"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -143,16 +138,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={slnkoPic3}
                           alt="slnko desc"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>

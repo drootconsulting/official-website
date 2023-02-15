@@ -62,22 +62,22 @@ const WorkSingle = () => {
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Envato
+                    <strong>Client</strong> Downtown Club
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Photography
+                    <strong>Category</strong> App Deveopment
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Year</strong> 2020
+                    <strong>Year</strong> 2022
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> bslthemes.com
+                    <strong>Website</strong> <a href="https://thedowntown.club/" target="_blank">thedowntown.club</a>
                   </div>
                 </div>
               </div>
@@ -122,16 +122,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={downtownCycle}
                           alt="downtown cycle"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -143,16 +138,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={downtownCards2}
                           alt="downtownCards2"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>

@@ -3087,7 +3087,7 @@ body .hero-main-slider .swiper-pagination {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 42px;
-  line-height: 1.3;
+  line-height: 1.1;
   color: #fff;
   font-weight: 900;
 }
@@ -4098,14 +4098,14 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .works-item .desc .category {
-  color: #eb6165;
+  color: #c0c0c7;
   font-weight: 700;
   display: block;
 }
 
 .works-item .desc .name {
   font-size: 25px;
-  color: #c0c0c7;
+  color: #fff;
   font-weight: 700;
   display: block;
 }
@@ -7570,6 +7570,7 @@ body
   display:flex;
   align-items: center;
   justify-content: center;
+  
 
 }
 
@@ -7589,6 +7590,7 @@ body
   background-position: right bottom;
   transition: all .2s ease-out;
   text-decoration: none;
+  margin-bottom: 0.3rem;
 }
 
 .menu-btn:hover .btnn{
@@ -7605,12 +7607,18 @@ body
 
 .menu-btn:hover .dropdown_menu a {
   display: block;
+ 
+}
+
+.dropdown_menu a:hover{
+  font-weight: bold;
+  color:white;
 }
 
 .dropdown_menu {
   position: absolute;
   top: 100%;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   border-radius: 10px;
   overflow: hidden;
   /* left: 5px; */
@@ -7624,7 +7632,7 @@ body
   color: #c0c0c7;
   padding: 0.5rem;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 1;
   
 }

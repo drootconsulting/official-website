@@ -34,7 +34,7 @@ export const clientData = [
     },
     {
         id: 3,
-        client_name: "BigD",
+        client_name: "BigD Cafe",
         image_url: "assets/images/big_d.png"
 
     },

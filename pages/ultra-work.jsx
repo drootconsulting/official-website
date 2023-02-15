@@ -42,14 +42,14 @@ const WorkSingle = () => {
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
           data-animate="active"
         >
-          <div className="image">
+          <div>
             {/* <div
               className="img js-parallax"
               style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
             /> */}
             <video className="img js-parallax"
               src="assets/videos/ultraVideo.mp4"
-              alt="u1" muted loop autoPlay/>
+              alt="u1" muted loop autoPlay style={{width:"100%",height:'100%'}}/>
           </div>
         </div>
         {/* Section Details */}
@@ -59,22 +59,22 @@ const WorkSingle = () => {
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Envato
+                    <strong>Client</strong> Ultrarate
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Photography
+                    <strong>Category</strong> Rebranding and Web Development
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Year</strong> 2020
+                    <strong>Year</strong> 2021
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> bslthemes.com
+                    <strong>Website</strong>  <a href="https://ultraservices.in/" target="_blank">ultraservices.in</a>
                   </div>
                 </div>
               </div>
@@ -122,16 +122,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={u2}
                           alt="ultra"
                           style={{width:"100%", height:"100%"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -143,16 +138,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={u3}
                           alt="ultra"
                           style={{width:"100%", height:"100%"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>

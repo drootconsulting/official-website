@@ -82,7 +82,7 @@ const PortfolioIsotope = () => {
                         data-splitting="words"
                         data-animate="active"
                       >
-                        The Downtown Club
+                        Downtown Club
                       </span>
                     </span>
                   </a>

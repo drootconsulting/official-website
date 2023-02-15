@@ -19,11 +19,9 @@ const List =({client, index})=>{
       }}onMouseOver={MouseOver} onMouseOut={MouseOut} >
       <div className="partners-item">
         <div className="image">
-          <a target="_blank" href="#"  >
             {!isMouseOver ? (client.client_name) :
               (<img src={client.image_url}  alt={client.id} style={{opacity: isMouseOver? 1 : 0, transition:"1.5s ease-in"}}/>)
             }
-          </a>
         </div>
       </div>
     </div>

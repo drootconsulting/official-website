@@ -26,7 +26,7 @@ const WorkSingle = () => {
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
                     data-splitting="chars"
                     data-animate="active">
-                    Photography
+                    Design & Technology
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
@@ -53,7 +53,7 @@ const WorkSingle = () => {
             <Image className="img js-parallax"
               src={baj33}
               alt="baj33"
-              
+              style={{height:"100%"}}
             />
           </div>
         </div>
@@ -64,22 +64,22 @@ const WorkSingle = () => {
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Envato
+                    <strong>Client</strong> Bhaskar Jyoti
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Photography
+                    <strong>Category</strong> Design & Technology
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Year</strong> 2020
+                    <strong>Year</strong> 2021
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> bslthemes.com
+                    <strong>Website</strong> <a href="https://bhaskarjyoti.com/" target="_blank">bhaskarjyoti.com</a>
                   </div>
                 </div>
               </div>
@@ -130,16 +130,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={baj2}
                           alt="baj2"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -151,16 +146,11 @@ const WorkSingle = () => {
                     data-animate="active"
                   >
                     <div className="img">
-                      <a
-                        href="/"
-                        className="has-popup-image"
-                      >
                         <Image
                           src={baj4}
                           alt="baj4"
                           style={{width:"100%", height:"auto"}}
                         />
-                      </a>
                     </div>
                   </div>
                 </div>

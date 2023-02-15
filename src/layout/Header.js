@@ -73,7 +73,7 @@ const Header = () => {
               <a href="/">Home</a>
               <a href="/about">Our Story</a>
               <a href="/works-2-column">Works</a>
-              <a href="/contacts">Contact Us</a>
+              <a href="/contacts">Contact </a>
             </div>
             </div>):(
               <div className="menu-btn"><button  className="btnn">Menu</button> 
@@ -81,7 +81,7 @@ const Header = () => {
                 <a href="/">Home</a>
                 <a href="/about">Our Story</a>
                 <a href="/works-2-column">Works</a>
-                <a href="/contacts">Contact Us</a>
+                <a href="/contacts">Contact</a>
               </div>
               </div>
             )
