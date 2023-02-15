@@ -5,59 +5,7 @@ import { data } from "../data";
 import { useEffect,useRef,} from "react";
 
 const SwipperComponent =({scrollIntoIntroView})=>{
-  //   const isInViewport = useRef(false)
-  //   const componentRef = useRef(null);
-  //   const test = useRef(null)
   
-  
-  //   useEffect(() => {
-  
-  //     const el = document.getElementById("home");
-  
-  //     const observer = new IntersectionObserver((entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           isInViewport.current = true
-  //         } else {
-  //           isInViewport.current = false
-  //         }
-  //       });
-  //     });
-  
-  //     observer.observe(el);
-  
-  
-  //     var lastScrollTop = 0;
-  //     window.addEventListener("scroll", function () {
-  //       var st = window.pageYOffset || document.documentElement.scrollTop;
-  //       if (st > lastScrollTop) {
-  //         if (window.pageYOffset > 100) test.current = false;
-  
-  //       } else if (st < lastScrollTop) {
-  //         isInViewport.current && !test.current && scrollToTop()
-  //       }
-  //       lastScrollTop = st <= 0 ? 0 : st;
-  //       // console.log("st", st);
-  //       // console.log("last", lastScrollTop);
-  //     }, false);
-  
-  //   }, []);
-  
-  
-  
-  //   function scrollToTop() {
-  //     test.current = true;
-  //     window.scrollTo({ top: 0, behavior: 'smooth' });
-  
-  //   }
-  //  const scrollIntoIntroView =()=>{
-  
-  //   const windowOffset = window.pageYOffset;
-  //   if(windowOffset===0){
-  //     document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
-  //   }
-    
-  //  }
 
    return(
     <div className="wrapper" id="swipper"> 
@@ -65,10 +13,8 @@ const SwipperComponent =({scrollIntoIntroView})=>{
         {/* onReachEnd={e => {
           document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
         }} */}
-        <Swiper {...home1SliderProps}  onReachEnd={scrollIntoIntroView} className="section hero-main-slider" autoplay={{
-          reverseDirection: false,
-          stopOnLastSlide: false
-        }} >
+        {/* onReachEnd={scrollIntoIntroView} */}
+        <Swiper {...home1SliderProps}   className="section hero-main-slider" >
 
           
           {
@@ -78,7 +24,7 @@ const SwipperComponent =({scrollIntoIntroView})=>{
                 {/* image */}
                 {item.video_url ?
                   <div className="slide" style={{ margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#0D0D0D', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>
-                    <video muted loop src={item.video_url}/>
+                    <video muted loop src={item.video_url} autoPlay/>
                   </div>
                   :
                   <div
@@ -128,10 +74,10 @@ const SwipperComponent =({scrollIntoIntroView})=>{
             ))}
 
           {/* pagination */}
-          <div
+          {/* <div
             className="swiper-pagination scrolla-element-anim-1 scroll-animate swiper-pagination-bullets swiper-pagination-horizontal animate__active animate__animated"
             data-animate="active"
-          />
+          /> */}
           {/* navigation */}
           <div className="swiper-buttons">
             <div className="swiper-button-prev" />

@@ -109,17 +109,17 @@ body.no-scroll {
 }
 
 a {
-  color: #eb6165;
+  color: #c0c0c7;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:link {
-  color: #eb6165;
+  color: #c0c0c7;
 }
 
 a:active {
-  color: #eb6165;
+  color: #c0c0c7;
 }
 
 a:visited {

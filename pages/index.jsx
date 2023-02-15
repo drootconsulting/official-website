@@ -28,67 +28,68 @@ const SwiperComp = dynamic(() => import('../src/components/SwiperComponent'), {
 
 const Index = () => {
 
-  const isInViewport = useRef(false)
-  const componentRef = useRef(null);
-  const test = useRef(null)
+//   const isInViewport = useRef(false)
+//   const componentRef = useRef(null);
+//   const test = useRef(null)
 
 
-  useEffect(() => {
+//   useEffect(() => {
 
-    const el = document.getElementById("home");
+//     const el = document.getElementById("home");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          isInViewport.current = true
-        } else {
-          isInViewport.current = false
-        }
-      });
-    });
+//     const observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           isInViewport.current = true
+//         } else {
+//           isInViewport.current = false
+//         }
+//       });
+//     });
 
-    observer.observe(el);
-
-
-    var lastScrollTop = 0;
-    window.addEventListener("scroll", function () {
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-        if (window.pageYOffset > 100) test.current = false;
-
-      } else if (st < lastScrollTop) {
-        isInViewport.current && !test.current && scrollToTop()
-      }
-      lastScrollTop = st <= 0 ? 0 : st;
-      // console.log("st", st);
-      // console.log("last", lastScrollTop);
-    }, false);
-
-  }, []);
+//     observer.observe(el);
 
 
+//     var lastScrollTop = 0;
+//     window.addEventListener("scroll", function () {
+//       var st = window.pageYOffset || document.documentElement.scrollTop;
+//       if (st > lastScrollTop) {
+//         if (window.pageYOffset > 100) test.current = false;
 
-  function scrollToTop() {
-    test.current = true;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+//       } else if (st < lastScrollTop) {
+//         isInViewport.current && !test.current && scrollToTop()
+//       }
+//       lastScrollTop = st <= 0 ? 0 : st;
+//       // console.log("st", st);
+//       // console.log("last", lastScrollTop);
+//     }, false);
 
-  }
- const scrollIntoIntroView =()=>{
+//   }, []);
 
-  const windowOffset = window.pageYOffset;
-  if(windowOffset===0){
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
-  }
+
+
+//   function scrollToTop() {
+//     test.current = true;
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+//   }
+//  const scrollIntoIntroView =()=>{
+
+//   const windowOffset = window.pageYOffset;
+//   if(windowOffset===0){
+//     document.getElementById('home').scrollIntoView({ behavior: 'smooth', inline: 'start' })
+//   }
   
- }
+//  }
 
   return (
 
     <Layout>
-    <Scomp scrollIntoIntroView={scrollIntoIntroView}/>
+      {/* scrollIntoIntroView={scrollIntoIntroView} */}
+    <Scomp />
       {/* Home page*/}
       {/* ref={componentRef} */}
-      <div id="home"  ref={componentRef}>
+      <div id="home"  >
         <div className="section section-inner started-heading" >
           <div className="container">
             <div className="row">

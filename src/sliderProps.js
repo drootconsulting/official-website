@@ -20,10 +20,8 @@ SwiperCore.use([
 export const home1SliderProps = {
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-  },
+  loop: false,
+  autoplay: false,
   effect: "creative",
   creativeEffect: {
     prev: {
@@ -35,7 +33,7 @@ export const home1SliderProps = {
     },
   },
   speed: 500,
-  mousewheel: true,
+  mousewheel: false,
   watchSlidesProgress: true,
   pagination: {
     el: ".hero-main-slider .swiper-pagination",

@@ -104,8 +104,7 @@ const App = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </>
       )}
-      {/*     
-      {loader && <Preloader />}  */}
+     
     </Fragment>
   );
 };
