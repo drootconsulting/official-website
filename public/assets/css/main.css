@@ -297,7 +297,7 @@ input[type="submit"] {
   line-height: 52px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #eb6165;
+  /* border: 2px solid #eb6165; */
   outline: none !important;
   box-shadow: none !important;
   cursor: pointer;
@@ -7578,7 +7578,7 @@ body
 }
 .btnn{
   text-decoration: none;
-  border:1px solid #c0c0c7;
+  border:2px solid #c0c0c7;
   border-radius:50px;
   background-color: #000;
   color:#c0c0c7;
@@ -7631,6 +7631,8 @@ body
     .menu-btn:hover .dropdown_menu--animated {
       display: block;
       width: 6rem;
+      transition-delay: 5s;
+
     
     }
     

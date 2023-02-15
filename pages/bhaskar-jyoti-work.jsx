@@ -87,7 +87,7 @@ const WorkSingle = () => {
           </div>
         </div>
         {/* Section Description */}
-        <div className="section section-inner m-description">
+        {/* <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
@@ -118,7 +118,7 @@ const WorkSingle = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Section Gallery */}
         <div className="section section-inner m-gallery">
           <div className="container">
@@ -169,7 +169,7 @@ const WorkSingle = () => {
           </div>
         </div>
         {/* Section Description */}
-        <div className="section section-inner m-description">
+        {/* <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
@@ -205,7 +205,7 @@ const WorkSingle = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Section Gallery Carousel */}
         {/* Section Navigation */}
       </div>

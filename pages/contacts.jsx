@@ -125,7 +125,7 @@ const Contacts = () => {
                       className="submit scrolla-element-anim-1 scroll-animate"
                       data-animate="active"
                     >
-                      <button className="btn">
+                      <button className="btn" style={{border: "2px solid #c0c0c7"}}>
                         Submit
                       </button>
                     </div>

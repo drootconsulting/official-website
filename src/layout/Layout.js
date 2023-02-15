@@ -3,7 +3,6 @@ import ImageView from "../components/ImageView";
 import { activeAnimation, initCursor } from "../utils";
 import Header from "./Header";
 import { useRouter } from "next/router";
-import ProjectHeader from "./ProjectHeader";
 const Layout = ({ children }) => {
   useEffect(() => {
     initCursor();
@@ -32,7 +31,7 @@ const Layout = ({ children }) => {
       <ImageView />
       <div className="container-page" style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#000'}}>
         {/* Header */}
-        {router.pathname==='/'? <Header/> : <ProjectHeader/>}
+         <Header/>
         {children}
       </div>
       <div className="cursor"></div>
