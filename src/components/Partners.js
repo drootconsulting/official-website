@@ -43,7 +43,7 @@ const Partners = ({description}) => {
               >
                 Long term partners, Long term trust
               </h2>
-              {description && <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              {description && <div >
                 Long-term partnerships are the key to success. By building strong relationships with our clients and partners, we create a foundation of trust and reliability that lasts for years to come
                   </div>}
             </div>

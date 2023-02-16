@@ -57,7 +57,6 @@ const Header = () => {
   return (
     <header className="header " >
       <div className="header__builder">
-        {/* logo */}
         <div className="logo-image" style={{display: scrollDirection==="down"?"none":"block"}}>
           <Link legacyBehavior href="/">
             <a>
@@ -65,7 +64,6 @@ const Header = () => {
             </a>
           </Link>
         </div>
-        {/* menu btn */}
         
           {
             windowWidth<1100 ? ( <div className="menu-btn"><button  className="btnn"  onClick={openMenuBar}>Menu</button> 

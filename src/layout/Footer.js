@@ -2,41 +2,24 @@ import { useRouter } from "next/router";
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className="footer"  style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#000'}}>
+    <footer className="footer"  style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#040407'}}>
+      <hr class="solid"></hr>
       <div className="footer__builder">
         <div className="container align-center">
-          <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              {/* titles */}
-              <div className="h-titles">
-                <div
-                  className="h-subtitle scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  Address:
-                </div>
-                <div
-                  className="h-text scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  ITHUM TOWER, B-818,  <br />
-                  Tower B, A-40, Sector 62,<br/>
-                   Noida, Uttar Pradesh 201301
-                </div>
+          <div className="row footer__build">
+            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{textAlign:"left"}}>
+              <div className="h-titles copyright" style={{display:"flex", justifyContent: 'space-between'}}>
+              <div style={{fontWeight: 300, color: "#f4f4f7"}}>
+                  &#169; 2023 | Droot Consulting Private Limited
+              </div>
+              <div>
+                  <a href="/privacyPolicy" style={{textDecoration:"underline"}}>Privacy Policy</a>
+              </div>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              {/* titles */}
+            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{textAlign:"right"}}>
               <div className="h-titles">
-                <div
-                  className="h-subtitle scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  Follow Us:
-                </div>
-              </div>
-              {/* social */}
-              <div className="social-links footer-social-links">
+              <div className="social-links footer-social-links"> 
                 <a
                   target="_blank"
                   href="https://www.instagram.com/droot_official/"
@@ -70,39 +53,11 @@ const Footer = () => {
                   <i aria-hidden="true" className="fab fa-linkedin-in" />
                 </a>
               </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-              {/* titles */}
-              <div className="h-titles">
-                <div
-                  className="h-subtitle scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  Get in touch:
-                </div>
-                <div
-                  className="h-text scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  <p>
-                  mohit@droot.in
-                    <br />
-                    +91 99887 18950
-                  </p>
-                </div>
               </div>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div
-                className="copyright-text scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                Copyright © 2023 Droot
               </div>
             </div>
           </div>
         </div>
-      </div>
     </footer>
   );
 };

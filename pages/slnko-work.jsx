@@ -4,7 +4,7 @@ import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import { mGalleryCarousel } from "../src/sliderProps";
 import Image from 'next/image';
-import slnkoPic1 from '../public/assets/images/vbrochure.jpg';
+import slnkoPic1 from '../public/assets/images/slnko1.jpg';
 import slnkoPic2 from '../public/assets/images/vbrochure2.jpg';
 import slnkoPic3 from '../public/assets/images/vbrochure3.jpg';
 import slnkoPic4 from '../public/assets/images/vbrochure4.jpg';
@@ -44,14 +44,15 @@ const WorkSingle = () => {
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
           data-animate="active"
         >
-          <div className="image">
+          <div>
             {/* <div
               className="img js-parallax"
               style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
             /> */}
             <Image className="img js-parallax"
-              src={slnkoPic2}
+              src={slnkoPic1}
               alt="slnko desc"
+              style={{height:"100%"}}
             />
           </div>
         </div>
@@ -77,7 +78,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> <a href="https://slnkoenergy.com/" target="_blank">slnkoenergy.com</a>
+                    <strong>Website</strong> <a href="https://slnkoenergy.com/" target="_blank">slnkoenergy</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +116,7 @@ const WorkSingle = () => {
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -131,7 +132,7 @@ const WorkSingle = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"

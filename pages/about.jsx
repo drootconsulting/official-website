@@ -4,6 +4,8 @@ import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import Partners from "../src/components/Partners";
 import { jsTestimonials } from "../src/sliderProps";
+import Image from "next/image";
+import story from "../public/assets/images/story.jpg";
 const About = () => {
   
   return (
@@ -29,16 +31,15 @@ const About = () => {
           </div>
         </div>
         {/* Section Image Large */}
+
         <div
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <div className="image">
-            <div
-              className="img js-parallax"
-              style={{ backgroundImage: "url(assets/images/about2.jpg)" }}
-            />
-          </div>
+          data-animate="active">
+            <div className="container">
+            <div className="row">
+          <Image src={story} alt="story" style={{height:"auto"}}/>
+        </div>
+        </div>
         </div>
         <div
           className="section section-inner section-description scrolla-element-anim-1 scroll-animate"
@@ -53,7 +54,7 @@ const About = () => {
                   
                 </h1>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div align="justify">
               we are dedicated to elevating the way people interact with the world through the power of design, technology, and innovation. Our team of creative thinkers, developers, and strategists are passionate about helping businesses create engaging experiences that delight their customers.
               </div>
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
@@ -83,23 +84,21 @@ const About = () => {
                   <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div
                       className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
+                      data-animate="active">
                       <div className="icon">
-                        <i aria-hidden="true" className="fas fa-chart-bar" />
+                        <i aria-hidden="true" className="far fa-object-group" />
                       </div>
-                      <div className="name">Software Development</div>
+                      <div className="name">Strategy</div>
                       <div className="text">
-                        Focused on creating, publishing, and distributing
-                        content for a targeted audience online.
+                        Design process relating to the front-end (client side)
+                        design of a website including writing.
                       </div>
                     </div>
                   </div>
                   <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div
                       className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
+                      data-animate="active">
                       <div className="icon">
                         <i aria-hidden="true" className="fas fa-copyright" />
                       </div>
@@ -113,15 +112,14 @@ const About = () => {
                   <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div
                       className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
+                      data-animate="active">
                       <div className="icon">
-                        <i aria-hidden="true" className="far fa-object-group" />
+                        <i aria-hidden="true" className="fas fa-chart-bar" />
                       </div>
-                      <div className="name">Strategy</div>
+                      <div className="name">Software Development</div>
                       <div className="text">
-                        Design process relating to the front-end (client side)
-                        design of a website including writing.
+                        Focused on creating, publishing, and distributing
+                        content for a targeted audience online.
                       </div>
                     </div>
                   </div>
@@ -142,7 +140,7 @@ const About = () => {
                   >
                     Our Pinnacle Pursuits
                   </div>
-                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                  <div align="justify">
                         We believe in the power of collaboration
                         and are always looking for new ways to
                         work together. We invite you to join us in
@@ -155,10 +153,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Section Video Large */}
-        {/* <AboutVideo /> */}
-        {/* Section Team */}
-        {/* Section Testimonials */}
         <div className="section section-inner m-testimonials">
           <div className="container">
             <div className="row">
@@ -185,17 +179,17 @@ const About = () => {
                       className="scrolla-element-anim-1 scroll-animate"
                       data-animate="active"
                     >
-                      <div className="image">
-                        <img src="assets/images/rev1.png" alt="John Smith" />
-                      </div>
                       <div className="desc">
-                        <div className="title">John Smith</div>
-                        <div className="name">Designer</div>
+                        <div className="title">Bibhuti R. Dubey</div>
+                        <div className="name">Co-Founder</div>
+                        <div className="name">Slnko Energy</div>
                         <div className="text">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don't look even slightly believable.
+                          Creativity and understanding of customer's
+                          psychology is what we loved about Droot.
+                          Throughout the development whenever we asked
+                          for a design change, they patiently listen to us,
+                          understood our requirements and came up with a
+                          better design than what we expected.
                         </div>
                       </div>
                     </div>
@@ -204,19 +198,16 @@ const About = () => {
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="image">
-                        <img src="assets/images/rev3.png" alt="Natasha Singh" />
-                      </div>
+                      data-animate="active">
                       <div className="desc">
-                        <div className="title">Natasha Singh</div>
-                        <div className="name">Photographer</div>
+                        <div className="title">Monalisha</div>
+                        <div className="name">Executive Assistant</div>
+                        <div className="name">Elworld Organic</div>
                         <div className="text">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don't look even slightly believable.
+                          It was a great experience to get our website
+                          designed from Droot. The services were on time as
+                          promised with smoother website experience.
+                          Thanks to the entire Droot team.
                         </div>
                       </div>
                     </div>
@@ -225,19 +216,14 @@ const About = () => {
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="image">
-                        <img src="assets/images/rev2.png" alt="Gray Woodman" />
-                      </div>
+                      data-animate="active">
                       <div className="desc">
-                        <div className="title">Gray Woodman</div>
-                        <div className="name">Bloger</div>
+                        <div className="title">Amit Mishra</div>
+                        <div className="name">Founder</div>
+                        <div className="name">Big D cafe</div>
                         <div className="text">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don't look even slightly believable.
+                          Droot provides us best marketing support for our
+                          company. Team is excellent with innovative minds.
                         </div>
                       </div>
                     </div>
@@ -246,21 +232,8 @@ const About = () => {
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="image">
-                        <img src="assets/images/rev4.png" alt="Robert Long" />
-                      </div>
-                      <div className="desc">
-                        <div className="title">Robert Long</div>
-                        <div className="name">Photographer</div>
-                        <div className="text">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don't look even slightly believable.
-                        </div>
-                      </div>
+                      data-animate="active">
+
                     </div>
                   </SwiperSlide>
                   {/* Pagination  */}

@@ -185,114 +185,12 @@ const WorkSingle = () => {
                   showcase their products and connect with consumers, and app intuitive user interface makes it easy for 
                   consumers to discover and purchase products they love.
                   </p>
-                  {/* <p>
-                    Creativity is to discover a question that has never been
-                    asked. If one brings up an idiosyncratic question, the
-                    answer he gives will necessarily be unique as well.
-                  </p> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* Section Gallery Carousel */}
-
-        {/* <div className="section section-inner m-gallery">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n12-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <Image
-                          src={downtownCards2}
-                          alt="downtownCards2"
-                          style={{width:"100%", height:"auto"}}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div className="works-item">
-                  <div
-                    className="image scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="img">
-                      <a
-                        href="assets/images/started-n15-920x1080.jpg"
-                        className="has-popup-image"
-                      >
-                        <Image
-                          src={downtownDesc2}
-                          alt="downtownDesc2"
-                          style={{width:"100%", height:"auto"}}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* <div
-          className="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <div className="container">
-            <Swiper {...mGalleryCarousel} className="swiper-container">
-              <div className="swiper-wrapper">
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n2_4.jpg" alt="Image #1" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n20.jpg" alt="Image #2" />
-                </SwiperSlide>
-                <SwiperSlide className="swiper-slide">
-                  <img src="assets/images/started-n14.jpg" alt="Image #3" />
-                </SwiperSlide>
-              </div>
-            </Swiper>
-          </div>
-        </div> */}
-        {/* Section Navigation */}
-        {/* <div className="section section-inner m-page-navigation">
-          <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div className="h-titles h-navs">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <span
-                        className="nav-arrow scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
-                        Next Project
-                      </span>
-                      <span
-                        className="h-title splitting-text-anim-2 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Astronaut
-                      </span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
       <Footer />
     </Layout>

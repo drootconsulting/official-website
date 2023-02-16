@@ -108,7 +108,7 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Brand Design
+                        Design & Technology
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
@@ -116,42 +116,6 @@ const PortfolioIsotope = () => {
                         data-animate="active"
                       >
                         Bhaskar Jyoti
-                      </span>
-                    </span>
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-branding">
-              <div
-                className="works-item scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <Link legacyBehavior href="/">
-                  <a>
-                    <span className="image">
-                      <span className="img">
-                        <Image
-                          src={nirmalsPic}
-                          alt="Nirmals"
-                          style={{ height: '100%', width: '100%' }}
-                        />
-                      </span>
-                    </span>
-                    <span className="desc">
-                      <span
-                        className="category splitting-text-anim-4 scroll-animate"
-                        data-splitting="chars"
-                        data-animate="active"
-                      >
-                        Branding & Graphic Design
-                      </span>
-                      <span
-                        className="name splitting-text-anim-4 scroll-animate"
-                        data-splitting="words"
-                        data-animate="active"
-                      >
-                        Nirmals
                       </span>
                     </span>
                   </a>
@@ -181,7 +145,7 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Branding & Web Development
+                        Rebranding and Web Development
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"
@@ -217,7 +181,7 @@ const PortfolioIsotope = () => {
                         data-splitting="chars"
                         data-animate="active"
                       >
-                        Branding
+                        Design & Technology
                       </span>
                       <span
                         className="name splitting-text-anim-4 scroll-animate"

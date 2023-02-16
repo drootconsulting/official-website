@@ -3,6 +3,9 @@ import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import PageTitle from "../src/layout/PageTitle";
 import axios from 'axios';
+import Image from 'next/image';
+import mumbaiPic from '../public/assets/images/mumbai.jpg';
+import noidaPic from "../public/assets/images/noida.jpg";
 
 const Contacts = () => {
   const [contactInfo, setContactInfo] = useState({
@@ -51,24 +54,11 @@ const Contacts = () => {
       <div className="wrapper">
         {/* Section Started Heading */}
         <PageTitle title="Contact Us" />
-
-        {/* Section Image Large */}
-        <div
-          className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <div className="image">
-            <div
-              className="img js-parallax"
-              style={{ backgroundImage: "url(assets/images/contact.jpg)" }}
-            />
-          </div>
-        </div>
         {/* Section Contacts Form */}
         <div className="section section-inner m-contacts-form">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div >
                 {/* titles */}
                 <div className="m-titles">
                   <div
@@ -92,6 +82,7 @@ const Contacts = () => {
                           placeholder="Full Name"
                           value = {contactInfo.name}
                           onChange={handleInputChange}
+                          style={{backgroundColor:"#1C2224", outline:"none"}}
                         />
                       </div>
                     </div>
@@ -106,6 +97,7 @@ const Contacts = () => {
                           placeholder="Email Address"
                           value=  {contactInfo.email}
                           onChange={handleInputChange}
+                          style={{backgroundColor:"#1C2224"}}
                         />
                       </div>
                     </div>
@@ -114,10 +106,12 @@ const Contacts = () => {
                         className="value scrolla-element-anim-1 scroll-animate"
                         data-animate="active">
                         <textarea
+                          type="text"
                           name="message"
                           placeholder="Message"
-                          value =  {contactInfo.message}
+                          value={contactInfo.message}
                           onChange={handleInputChange}
+                          style={{backgroundColor:"#1C2224", border:"none"}}
                         />
                       </div>
                     </div>
@@ -125,7 +119,7 @@ const Contacts = () => {
                       className="submit scrolla-element-anim-1 scroll-animate"
                       data-animate="active"
                     >
-                      <button className="btn" style={{border: "2px solid #c0c0c7"}}>
+                      <button className="btn" style={{border: "2px solid #c0c0c7", borderRadius:"50px"}}>
                         Submit
                       </button>
                     </div>
@@ -135,63 +129,52 @@ const Contacts = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                {/* titles */}
-                <div className="m-titles">
-                  <h2
-                    className="m-title scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    Connect with us
-                  </h2>
+            </div>
+          </div>
+        </div>
+        {/* Location images / contact */}
+        <div className="location-contact">
+          <div className="container">
+            <div className="row">
+              <div  className="col-lg-12 location-title-div">
+                <h3 className="location-title" >Locations</h3>
                 </div>
-                {/* services */}
-                <div className="services-items row">
-                  <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i aria-hidden="true" className="fas fa-phone-alt" />
+                  <div className=" location-1 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div className="location-image">
+                    <Image src={noidaPic} alt="Noida"/>
+                    </div>
+                    <div className="location-detail">
+                      <div className="city-name">
+                            Noida
                       </div>
-                      <div className="name">Phone</div>
-                      <div className="text">+91 99887 18950</div>
+                      <div className="contact">
+                            +91 99887 18950
+                      </div>
+                      <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
+                      <address className="contact address">ITHUM TOWER,B-818, <br/>
+                      Tower B, A-40, Sector 62, <br/>
+                       Noida, Uttar Pradesh 201301</address>
                     </div>
                   </div>
-                  <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i aria-hidden="true" className="fas fa-at" />
+                  <div className=" location-1 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div className="location-image">
+                      <Image src={mumbaiPic} alt="Mumbai"/>
+                    </div>
+                    <div className="location-detail">
+                    <div className="city-name">
+                            Mumbai
                       </div>
-                      <div className="name">E-mail</div>
-                      <div className="text">mohit@droot.in</div>
+                      <div className="contact">
+                            +91 99887 18950
+                      </div>
+                      <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
+                      <address className="contact address">
+                      Enam Sambhav, C-20, <br/>
+                      G Block Rd, Bandra Kurla Complex, <br/>
+                      Mumbai, Maharashtra 400051
+                      </address>
                     </div>
                   </div>
-                  <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div
-                      className="services-item scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <div className="icon">
-                        <i
-                          aria-hidden="true"
-                          className="fab fa-font-awesome-flag"
-                        />
-                      </div>
-                      <div className="name">Location</div>
-                      <div className="text">
-                      ITHUM TOWER, <br/>
-                      B-818,Tower B, A-40, Sector 62, <br/>
-                       Noida, Uttar Pradesh 201301
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

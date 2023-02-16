@@ -2,7 +2,6 @@ import Layout from "../src/layout/Layout";
 import dynamic from "next/dynamic";
 import Partners from "../src/components/Partners";
 import Footer from "../src/layout/Footer";
-import { useEffect,useRef,} from "react";
 import Scomp from '../src/components/SwiperComponent';
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
@@ -42,7 +41,7 @@ const Index = () => {
                   className="description-text scrolla-element-anim-1 scroll-animate"
                   data-animate="active"
                 >
-                  <p>
+                  <p align="justify">
                     At Droot, we believe in the power of design, technology, and innovation to transform the way people interact with the world.
                     We’re a team of creative thinkers, developers, and strategists  with a passion for helping businesses create
                     engaging experiences that delight their customers.

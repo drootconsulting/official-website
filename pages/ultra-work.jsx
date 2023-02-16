@@ -74,7 +74,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong>  <a href="https://ultraservices.in/" target="_blank">ultraservices.in</a>
+                    <strong>Website</strong>  <a href="https://ultraservices.in/" target="_blank">ultraservices</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ const WorkSingle = () => {
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"
@@ -131,7 +131,7 @@ const WorkSingle = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div className="works-item">
                   <div
                     className="image scrolla-element-anim-1 scroll-animate"

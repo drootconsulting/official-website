@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <ImageView />
-      <div className="container-page" style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#000'}}>
+      <div className="container-page" style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#040407'}}>
         {/* Header */}
          <Header/>
         {children}
