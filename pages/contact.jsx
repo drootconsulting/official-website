@@ -7,7 +7,7 @@ import Image from 'next/image';
 import mumbaiPic from '../public/assets/images/mumbai.jpg';
 import noidaPic from "../public/assets/images/noida.jpg";
 
-const Contacts = () => {
+const Contact = () => {
   const [contactInfo, setContactInfo] = useState({
     name: "",
     email: "",
@@ -78,7 +78,7 @@ const Contacts = () => {
                           placeholder="Full Name"
                           value={contactInfo.name}
                           onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224", outline: "none" }}
+                          style={{ backgroundColor: "#1C2224", outline: "none", fontFamily: "sans-serif" }}
                         />
                       </div>
                     </div>
@@ -93,7 +93,7 @@ const Contacts = () => {
                           placeholder="Email Address"
                           value={contactInfo.email}
                           onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224" }}
+                          style={{ backgroundColor: "#1C2224", fontFamily: "sans-serif" }}
                         />
                       </div>
                     </div>
@@ -107,7 +107,7 @@ const Contacts = () => {
                           placeholder="Message"
                           value={contactInfo.message}
                           onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224", border: "none" }}
+                          style={{ backgroundColor: "#1C2224", border: "none", fontFamily: "sans-serif" }}
                         />
                       </div>
                     </div>
@@ -143,7 +143,7 @@ const Contacts = () => {
                     Noida
                   </div>
                   <div className="contact">
-                    +91 99887 18950
+                    +91 120-4136316
                   </div>
                   <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
                   <address className="contact address">ITHUM TOWER,B-818, <br />
@@ -160,7 +160,7 @@ const Contacts = () => {
                     Mumbai
                   </div>
                   <div className="contact">
-                    +91 99887 18950
+                    +91 22-48808623
                   </div>
                   <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
                   <address className="contact address">
@@ -178,4 +178,4 @@ const Contacts = () => {
     </Layout>
   );
 };
-export default Contacts;
+export default Contact;

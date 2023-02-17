@@ -7,7 +7,7 @@ import Image from 'next/image';
 import mumbaiPic from '../public/assets/images/mumbai.jpg';
 import noidaPic from "../public/assets/images/noida.jpg";
 
-const Contacts = () => {
+const Contact = () => {
   const [contactInfo, setContactInfo] = useState({
     name: "",
     email: "",
@@ -178,4 +178,4 @@ const Contacts = () => {
     </Layout>
   );
 };
-export default Contacts;
+export default Contact;
