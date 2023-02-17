@@ -70,7 +70,8 @@ const Header = () => {
             <div className="dropdown_menu dropdown_menu--animated  dropdown_menu-8" style={{display : isOpen ?"block":"none"}}>
               <a href="/">Home</a>
               <a href="/about">Our Story</a>
-              <a href="/works-2-column">Works</a>
+              <a href="/services">Our Services</a>
+              <a href="/works-creative">Works</a>
               <a href="/contacts">Contact </a>
             </div>
             </div>):(
@@ -78,7 +79,8 @@ const Header = () => {
               <div className="dropdown_menu dropdown_menu--animated  dropdown_menu-8">
                 <a href="/">Home</a>
                 <a href="/about">Our Story</a>
-                <a href="/works-2-column">Works</a>
+                <a href="/services">Our Services</a>
+                <a href="/works-creative">Works</a>
                 <a href="/contacts">Contact</a>
               </div>
               </div>

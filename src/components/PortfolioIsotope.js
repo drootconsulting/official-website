@@ -4,7 +4,6 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import Image from 'next/image';
 import downtownPic from '../../public/assets/images/downtown-.webp';
 import bhaskarPic from '../../public/assets/images/bhaskar--jyoti.webp';
-import nirmalsPic from '../../public/assets/images/nirmals-.webp';
 import ultra from '../../public/assets/images/ultra.webp';
 import slnkoPic from '../../public/assets/images/slnko-.webp';
 const PortfolioIsotope = () => {
@@ -45,15 +44,6 @@ const PortfolioIsotope = () => {
       <div className="section section-inner m-works">
         <div className="container">
           {/* filter */}
-          
-          <div className="filter-links">
-          <Link legacyBehavior href="/work-single">
-            <a onClick={handleFilterKeyChange("*")} data-filter="*">
-             PROJECTS
-            </a>
-            </Link>
-           
-          </div>
           {/* works items */}
           <div className="works-items row column-2-offset">
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-photography">

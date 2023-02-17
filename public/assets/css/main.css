@@ -4183,6 +4183,8 @@ body .hero-main-slider .swiper-pagination {
 
 .section.m-works {
   margin-top: 0px !important;
+  /* new added */
+  margin-bottom: 50px !important;
 }
 
 .section.m-works-carousel {
@@ -6476,6 +6478,12 @@ a.wp-block-button__link {
     padding: 4px 0 4px 0;
     min-height: auto;
   }
+
+  /* new added */
+  .footer__builder{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .footer .footer__builder {
     padding: 0;
   }
@@ -6486,10 +6494,7 @@ a.wp-block-button__link {
   .footer.footer-default .copyright-text {
     margin-bottom: 0;
   }
-  .footer .social-links,
-  .footer__builder .social-links {
-    /* margin-top: 60px; */
-  }
+
   /*inner*/
   .section.section-inner {
     margin: 100px 0;
@@ -7612,6 +7617,7 @@ body
   background-size: 200% 200%;
   background-position: right bottom;
   transition: all .2s ease-out;
+  /* -webkit-transition: all .2s ease-out; */
   text-decoration: none;
   margin-bottom: 0.3rem;
 }
@@ -7619,7 +7625,7 @@ body
 .menu-btn:hover .btnn{
   background-position: left bottom;
   color: black;
-  width:6rem;
+  width:7rem;
   background-color: #c0c0c7;
 }
 
@@ -7661,7 +7667,7 @@ body
 }
     .menu-btn:hover .dropdown_menu--animated {
       display: block;
-      width: 6rem;
+      width: 7rem;
       transition-delay: 5s;
 
     
@@ -7719,6 +7725,10 @@ body
   .copyright{
     justify-content: center;
   }
+
+  .services-title{
+    justify-content: center;
+  }
 }
 
 hr{
@@ -7767,4 +7777,64 @@ hr{
 
 .privacy-policy-detail p{
   text-align: justify;
+}
+
+.view-more-projects{
+  margin-top:0;
+}
+
+.view-more-btn {
+  text-decoration: none;
+  border: 2px solid #c0c0c7;
+  border-radius: 50px;
+  background-color: #040407;
+  color: #c0c0c7;
+  padding: 5px 20px;
+  margin-top: 1rem;
+  background: linear-gradient(to right, #c0c0c7 50%, black 50%);
+  background-size: 200% 200%;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+  /* -webkit-transition: all .2s ease-out; */
+
+}
+.view-more-section{
+  margin-top:30px;
+}
+
+.view-more-btn:hover{
+  background-position: left bottom;
+  color: black;
+  background-color: #c0c0c7;
+}
+
+
+.video { 
+  /* object-fit: contain; */
+  /* display: flex; */
+   width:100%;   
+}
+
+.services-opt{
+  margin-top: 2rem;
+}
+
+/* .hide{
+  display: none;
+} */
+
+.read-more-btn{
+  text-decoration: none;
+  border: 2px solid #c0c0c7;
+  border-radius: 50px;
+  background-color: #040407;
+  color: #c0c0c7;
+  padding: 5px 10px;
+  /* margin-top: 0.3rem; */
+}
+
+@media only screen and (max-width: 2149px){
+      .video{
+        height:100%;
+      }
 }

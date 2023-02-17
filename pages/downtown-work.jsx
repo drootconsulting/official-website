@@ -10,12 +10,10 @@ const WorkSingle = () => {
   return (
     <Layout>
       <div className="wrapper">
-        {/* Section Started Heading */}
         <div className="section section-inner started-heading">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* titles */}
                 <div className="h-titles">
                   <div
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
@@ -35,16 +33,11 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Image Large */}
         <div
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
           data-animate="active"
         >
           <div>
-            {/* <div
-              className="img js-parallax"
-              style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
-            /> */}
             <Image className="img js-parallax"
               src={downtownCard1}
               alt="downtownCards"
@@ -52,7 +45,6 @@ const WorkSingle = () => {
             />
           </div>
         </div>
-        {/* Section Details */}
         <div className="section section-inner m-details">
           <div className="container">
             <div className="details-box">
@@ -81,7 +73,6 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Description */}
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
@@ -108,7 +99,6 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Gallery */}
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
@@ -147,7 +137,6 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Description */}
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
@@ -177,7 +166,6 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Gallery Carousel */}
       </div>
       <Footer />
     </Layout>

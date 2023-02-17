@@ -1,20 +1,15 @@
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
-import { mGalleryCarousel } from "../src/sliderProps";
 import Image from 'next/image';
 import slnkoPic1 from '../public/assets/images/slnko1.jpg';
-import slnkoPic2 from '../public/assets/images/vbrochure2.jpg';
 import slnkoPic3 from '../public/assets/images/vbrochure3.jpg';
 import slnkoPic4 from '../public/assets/images/vbrochure4.jpg';
-import slnkoPic5 from '../public/assets/images/vbrochure5.jpg';
 
 const WorkSingle = () => {
   return (
     <Layout>
       <div className="wrapper">
-        {/* Section Started Heading */}
         <div className="section section-inner started-heading">
           <div className="container">
             <div className="row">
