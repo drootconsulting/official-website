@@ -3,11 +3,22 @@ import ImageView from "../components/ImageView";
 import { activeAnimation, initCursor } from "../utils";
 import Header from "./Header";
 import { useRouter } from "next/router";
+import ReactGA from 'react-ga';
+
 const Layout = ({ children }) => {
+  const router = useRouter();
+
   useEffect(() => {
+    ReactGA.pageview(router.pathname);
     initCursor();
     activeAnimation();
     window.addEventListener("scroll", activeAnimation);
+    let { jarallax, jarallaxVideo } = require("jarallax");
+    jarallaxVideo();
+    jarallax(document.querySelectorAll(".js-parallax"), {
+      speed: 0.65,
+      type: "scroll",
+    });
   }, []);
 
   useEffect(() => {
@@ -17,15 +28,6 @@ const Layout = ({ children }) => {
     Splitting();
   });
 
-  useEffect(() => {
-    let { jarallax, jarallaxVideo } = require("jarallax");
-    jarallaxVideo();
-    jarallax(document.querySelectorAll(".js-parallax"), {
-      speed: 0.65,
-      type: "scroll",
-    });
-  }, []);
-  const router = useRouter();
   return (
     <Fragment>
       <ImageView />
