@@ -3,8 +3,8 @@ const Footer = () => {
   const router = useRouter();
   return (
     <footer className="footer"  style={{backgroundColor:router.pathname === '/bhaskar-jyoti-work' ? '#2f2f2f' : '#040407'}}>
-      <hr class="solid"></hr>
-      <div className="footer__builder">
+      <hr style={{margin:"0"}}></hr>
+      <div className="footer__builder" style={{paddingTop:"50px", paddingBottom:"50px"}}>
         <div className="container align-center">
           <div className="row footer__build">
             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{textAlign:"left"}}>
@@ -12,8 +12,9 @@ const Footer = () => {
               <div style={{fontWeight: 300, color: "#f4f4f7"}}>
                   &#169; 2023 | Droot Consulting Private Limited
               </div>
-              <div>
-                  <a href="/privacyPolicy" style={{textDecoration:"underline"}}>Privacy Policy</a>
+              <div className="details-label">
+                  <a href="/privacyPolicy" 
+                  data-animate="active">Privacy Policy</a>
               </div>
               </div>
             </div>

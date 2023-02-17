@@ -12,7 +12,7 @@ const SwipperComponent =()=>{
               <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
               >
                   <div className="slide" style={{ margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#0D0D0D', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>
-                    <video muted loop src={item.video_url} autoPlay preload={'auto'} type={'video/mp4'} />
+                    <video muted loop src={item.video_url} autoPlay className="video" type="video/mp4" style={{objectFit: item.id===1?"cover":"none"}}/>
                   </div>
                  {
                   <div className="slide-titles">

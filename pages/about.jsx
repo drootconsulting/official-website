@@ -11,12 +11,10 @@ const About = () => {
   return (
     <Layout>
       <div className="wrapper">
-        {/* Section Started Heading */}
         <div className="section section-inner started-heading">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* titles */}
                 <div className="h-titles">
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
@@ -30,8 +28,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Section Image Large */}
-
         <div
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
           data-animate="active">
@@ -63,12 +59,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Section Services */}
         <div className="section section-inner m-services">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
-                {/* titles */}
                 <div className="m-titles">
                   <h2
                     className="m-title scrolla-element-anim-1 scroll-animate"
@@ -79,7 +73,6 @@ const About = () => {
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* services */}
                 <div className="services-items row">
                   <div className="services-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div
@@ -128,7 +121,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* Section Description */}
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
@@ -157,7 +149,6 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
-                {/* titles */}
                 <div className="m-titles">
                   <h2
                     className="m-title scrolla-element-anim-1 scroll-animate"
@@ -168,12 +159,10 @@ const About = () => {
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* Carousel */}
                 <Swiper
                   {...jsTestimonials}
                   className="swiper-container js-testimonials"
                 >
-                  {/* Testimonials item */}
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
@@ -194,7 +183,6 @@ const About = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                  {/* Testimonials item */}
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
@@ -212,7 +200,6 @@ const About = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                  {/* Testimonials item */}
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
@@ -228,7 +215,6 @@ const About = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                  {/* Testimonials item */}
                   <SwiperSlide className="testimonials-item swiper-slide">
                     <div
                       className="scrolla-element-anim-1 scroll-animate"
@@ -236,18 +222,14 @@ const About = () => {
 
                     </div>
                   </SwiperSlide>
-                  {/* Pagination  */}
                   <div className="swiper-pagination" />
                 </Swiper>
-                {/* /Carousel */}
               </div>
             </div>
           </div>
         </div>
-        {/* Section Partners */}
         <Partners description={true}/>
       </div>
-      {/* Footer */}
       <Footer />
     </Layout>
   );
