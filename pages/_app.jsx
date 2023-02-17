@@ -2,9 +2,11 @@ import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import Preloader from "../src/layout/Preloader";
 import "../styles/globals.css";
+import ReactGA from 'react-ga';
 
 const App = ({ Component, pageProps }) => {
   const [loader, setLoader] = useState(true);
+  ReactGA.initialize('UA-157989853-1');
 
   useEffect(() => {
     setTimeout(() => {
