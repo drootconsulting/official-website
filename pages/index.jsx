@@ -53,6 +53,7 @@ const Index = () => {
         </div>
 
       </div>
+      
 
       <PortfolioIsotope />
       {/* Section Partners */}
