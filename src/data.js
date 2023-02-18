@@ -23,61 +23,61 @@ export const clientData = [
     {
         id: 1,
         client_name: "Aqueouss",
-        image_url: "assets/images/aqueouss.png"
+        image_url: "assets/images/clients/aqueouss.png"
 
     },
     {
         id: 2,
         client_name: "Bhaskar Jyoti",
-        image_url: "assets/images/bhaskar_jyoti.png"
+        image_url: "assets/images/clients/bhaskarjyoti.png"
 
     },
     {
         id: 3,
         client_name: "BigD Cafe",
-        image_url: "assets/images/big_d.png"
+        image_url: "assets/images/clients/bigdcafe.png"
 
     },
     {
         id: 4,
-        client_name: "Elworld",
-        image_url: "assets/images/el_-_world.png"
+        client_name: "Elworld Organics",
+        image_url: "assets/images/clients/elworldorganics.png"
 
     },
     {
         id: 5,
-        client_name: "Atom",
-        image_url: "assets/images/atom.png"
+        client_name: "III Enterprises",
+        image_url: "assets/images/clients/iiienterprises.png"
 
     },
     {
         id: 6,
         client_name: "Nirmals",
-        image_url: "assets/images/nirmals_480.png"
+        image_url: "assets/images/clients/nirmals.png"
 
     },
     {
         id: 7,
         client_name: "Organic Kitchen",
-        image_url: "assets/images/organic_kitchen.png"
+        image_url: "assets/images/clients/organickitchen.png"
 
     },
     {
         id: 8,
-        client_name: "Slnko",
-        image_url: "assets/images/slnko.png"
+        client_name: "Slnko Energy",
+        image_url: "assets/images/clients/slnko.png"
 
     },
     {
         id: 9,
         client_name: "Ultra",
-        image_url: "assets/images/ultra.png"
+        image_url: "assets/images/clients/ultra.png"
 
     },
     {
         id: 10,
-        client_name: "Downtown",
-        image_url: "assets/images/downtown.png"
+        client_name: "Downtown Club",
+        image_url: "assets/images/clients/downtownclub.png"
 
     }
 
