@@ -65,7 +65,7 @@ export const clientData = [
     {
         id: 8,
         client_name: "Slnko Energy",
-        image_url: "assets/images/clients/slnko.png"
+        image_url: "assets/images/clients/slnkoenergy.png"
 
     },
     {
