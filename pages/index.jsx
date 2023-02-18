@@ -143,7 +143,6 @@ const Index = () => {
         </div>
       </div>
       <Partners />
-      <Footer />
     </Layout>
   );
 };

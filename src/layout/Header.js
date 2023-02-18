@@ -71,7 +71,7 @@ const Header = () => {
               <a href="/">Home</a>
               <a href="/about">Our Story</a>
               <a href="/services">Our Services</a>
-              <a href="/works-creative">Works</a>
+              <a href="/work">Work</a>
               <a href="/contact">Contact </a>
             </div>
             </div>):(
@@ -80,7 +80,7 @@ const Header = () => {
                 <a href="/">Home</a>
                 <a href="/about">Our Story</a>
                 <a href="/services">Our Services</a>
-                <a href="/works-creative">Works</a>
+                <a href="/work">Work</a>
                 <a href="/contact">Contact</a>
               </div>
               </div>

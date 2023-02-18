@@ -8,15 +8,14 @@ const PortfolioIsotope = dynamic(
     ssr: false,
   }
 );
-const WorksCreative = () => {
+const Work = () => {
   return (
     <Layout>
       <div className="wrapper">
         <PageTitle title="Projects" />
         <PortfolioIsotope />
       </div>
-      <Footer />
     </Layout>
   );
 };
-export default WorksCreative;
+export default Work;
