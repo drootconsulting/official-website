@@ -146,7 +146,7 @@ const Contact = () => {
                     +91 120-4136316
                   </div>
                   <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
-                  <address className="contact address">ITHUM TOWER,B-818, <br />
+                  <address className="contact address">ITHUM TOWER, B-818,<br />
                     Tower B, A-40, Sector 62, <br />
                     Noida, Uttar Pradesh 201301</address>
                 </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                   </div>
                   <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
                   <address className="contact address">
-                    Enam Sambhav, C-20, <br />
+                  HD-299, Enam Sambhav, C-20, <br />
                     G Block Rd, Bandra Kurla Complex, <br />
                     Mumbai, Maharashtra 400051
                   </address>

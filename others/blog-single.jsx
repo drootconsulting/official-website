@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
 const BlogSingle = () => {
   return (
     <Layout>

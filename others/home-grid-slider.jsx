@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Layout from "../src/layout/Layout";
-import { HomeGridSliderProps } from "../src/sliderProps";
+import Layout from "../../src/layout/Layout";
+import { HomeGridSliderProps } from "../../src/sliderProps";
 const HomeGridSlider = () => {
   return (
     <Layout>

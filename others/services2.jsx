@@ -1,11 +1,10 @@
 import { useState } from "react";
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
-import PageTitle from "../src/layout/PageTitle";
-import axios from 'axios';
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
+import PageTitle from "../../src/layout/PageTitle";
 import Image from 'next/image';
-import mumbaiPic from '../public/assets/images/mumbai.jpg';
-import noidaPic from "../public/assets/images/noida.jpg";
+import mumbaiPic from '../../public/assets/images/mumbai.jpg';
+import noidaPic from "../../public/assets/images/noida.jpg";
 
 const Contact = () => {
   const [contactInfo, setContactInfo] = useState({

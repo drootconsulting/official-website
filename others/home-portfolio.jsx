@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-import Partners from "../src/components/Partners";
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
+import Partners from "../../src/components/Partners";
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
 const PortfolioIsotope = dynamic(
-  () => import("../src/components/PortfolioIsotope"),
+  () => import("../../src/components/PortfolioIsotope"),
   {
     ssr: false,
   }
@@ -34,7 +34,7 @@ const HomePortfolio = () => {
                   data-animate="active"
                 >
                   <p>
-                  At Droot, we believe in the power of design, technology, and innovation to transform the way people<br/> interact with the world.
+                  At Droot,we believe in the power of design, technology, and innovation to transform the way people<br/> interact with the world.
                    
                    We’re a team of creative thinkers, developers, and strategists  with a<br/> passion for helping businesses create 
                    engaging experiences that delight their customers.

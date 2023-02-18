@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
-import PageTitle from "../src/layout/PageTitle";
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
+import PageTitle from "../../src/layout/PageTitle";
 const Gallery3Isotope = dynamic(
-  () => import("../src/components/Gallery3Isotope"),
+  () => import("../../src/components/Gallery3Isotope"),
   {
     ssr: false,
   }

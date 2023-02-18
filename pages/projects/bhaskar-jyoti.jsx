@@ -1,12 +1,10 @@
 
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
-import { mGalleryCarousel } from "../src/sliderProps";
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
-import baj1 from '../public/assets/images/baj1.webp';
-import baj2 from '../public/assets/images/baj2.webp';
-import baj33 from '../public/assets/images/baj33.jpg';
-import baj4 from '../public/assets/images/baj4.webp';
+import baj2 from '../../public/assets/images/baj2.webp';
+import baj33 from '../../public/assets/images/baj33.jpg';
+import baj4 from '../../public/assets/images/baj4.webp';
 
 const WorkSingle = () => {
   return (

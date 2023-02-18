@@ -12,9 +12,7 @@ const WorksCreative = () => {
   return (
     <Layout>
       <div className="wrapper">
-        {/* Section Started Heading */}
         <PageTitle title="Projects" />
-        {/* Section Works */}
         <PortfolioIsotope />
       </div>
       <Footer />

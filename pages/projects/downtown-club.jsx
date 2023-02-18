@@ -1,10 +1,10 @@
 
-import Footer from "../src/layout/Footer";
-import Layout from "../src/layout/Layout";
+import Footer from "../../src/layout/Footer";
+import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
-import slnkoPic1 from '../public/assets/images/slnko1.jpg';
-import slnkoPic3 from '../public/assets/images/vbrochure3.jpg';
-import slnkoPic4 from '../public/assets/images/vbrochure4.jpg';
+import downtownCard1 from '../../public/assets/images/downtownCard1.png';
+import downtownCycle from '../../public/assets/images/downtownCycle.webp';
+import downtownCards2 from '../../public/assets/images/downtownCards2.webp';
 
 const WorkSingle = () => {
   return (
@@ -14,73 +14,65 @@ const WorkSingle = () => {
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                {/* titles */}
                 <div className="h-titles">
                   <div
                     className="h-subtitle red splitting-text-anim-1 scroll-animate"
                     data-splitting="chars"
                     data-animate="active">
-                    Design & Technology
+                    App Development
                   </div>
                   <div
                     className="h-title splitting-text-anim-2 scroll-animate"
                     data-splitting="chars"
                     data-animate="active"
                   >
-                    Slnko Energy
+                    Downtown Club
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Section Image Large */}
         <div
           className="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
           data-animate="active"
         >
           <div>
-            {/* <div
-              className="img js-parallax"
-              style={{ backgroundImage: "url(assets/images/downtownDesc1.webp)" }}
-            /> */}
             <Image className="img js-parallax"
-              src={slnkoPic1}
-              alt="slnko desc"
+              src={downtownCard1}
+              alt="downtownCards"
               style={{height:"100%"}}
             />
           </div>
         </div>
-        {/* Section Details */}
         <div className="section section-inner m-details">
           <div className="container">
             <div className="details-box">
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Client</strong> Slnko Energy
+                    <strong>Client</strong> Downtown Club
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Category</strong> Design & Technology
+                    <strong>Category</strong> App Deveopment
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Year</strong> 2020
+                    <strong>Year</strong> 2022
                   </div>
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> <a href="https://slnkoenergy.com/" target="_blank">slnkoenergy</a>
+                    <strong>Website</strong> <a href="https://thedowntown.club/" target="_blank">thedowntown</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Section Description */}
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
@@ -100,14 +92,13 @@ const WorkSingle = () => {
                   data-animate="active"
                 >
                   <p align="justify">
-                  Our client, Slnko Energy, is a leading provider of project management services for solar energy projects. Their goal is to offer a comprehensive solution for clients looking to implement smart and eco-friendly power solutions. Our team was tasked with managing all aspects of design, branding, and software development for the company, including the development of a visually appealing website and a project management software, "Protrac", to manage construction projects.
+                  Downtown is a mobile application that connects independent brands with consumers, providing a unique and personalized shopping experience. Our team has been working on this project for over a year, leveraging cutting-edge technology to deliver a seamless and user-friendly platform.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Section Gallery */}
         <div className="section section-inner m-gallery">
           <div className="container">
             <div className="row">
@@ -119,8 +110,8 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                         <Image
-                          src={slnkoPic4}
-                          alt="slnko cycle"
+                          src={downtownCycle}
+                          alt="downtown cycle"
                           style={{width:"100%", height:"auto"}}
                         />
                     </div>
@@ -135,8 +126,8 @@ const WorkSingle = () => {
                   >
                     <div className="img">
                         <Image
-                          src={slnkoPic3}
-                          alt="slnko desc"
+                          src={downtownCards2}
+                          alt="downtownCards2"
                           style={{width:"100%", height:"auto"}}
                         />
                     </div>
@@ -146,7 +137,6 @@ const WorkSingle = () => {
             </div>
           </div>
         </div>
-        {/* Section Description */}
         <div className="section section-inner m-description">
           <div className="container">
             <div className="row">
@@ -166,17 +156,16 @@ const WorkSingle = () => {
                   data-animate="active"
                 >
                   <p align="justify">
-                  The final deliverables for this project included a fully functional website, the "Protrac" project management software, and a comprehensive set of brand collaterals, including business cards and social media creatives. We also provided ongoing support and maintenance services to ensure that the website and software continue to meet the needs of the company and its clients.
-                  </p>
-                  <p align="justify">
-                  Overall, this project was a success, and we are proud to have contributed to Slnko Energy's continued growth and success in the solar energy industry.
+                  Our efforts have paid off, and the result is a high-quality mobile application that provides a discovery-led 
+                  marketplace for independent brands in India. Downtown offers a reliable and stable platform for brands to 
+                  showcase their products and connect with consumers, and app intuitive user interface makes it easy for 
+                  consumers to discover and purchase products they love.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Section Gallery Carousel */}
       </div>
       <Footer />
     </Layout>
