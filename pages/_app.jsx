@@ -9,15 +9,10 @@ const App = ({ Component, pageProps }) => {
   ReactGA.initialize('UA-157989853-1');
 
   useEffect(() => {
+    document.body.style.backgroundColor = "black";
     setTimeout(() => {
       setLoader(false);
     }, 500);
-  }, []);
-
-  useEffect(() => {
-
-    document.body.style.backgroundColor = "black";
-
   }, []);
 
   return (

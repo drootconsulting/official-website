@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { home1SliderProps } from "../sliderProps";
-import { data } from "../data";
-const SwipperComponent =()=>{
+import { home1SliderProps } from "../../sliderProps";
+import { data } from "../../data";
+const HeroSwiper =()=>{
    return(
     <>
     
@@ -53,4 +53,4 @@ const SwipperComponent =()=>{
 
 }
 
-export default SwipperComponent;
+export default HeroSwiper;

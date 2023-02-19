@@ -16,11 +16,11 @@ function useScrollDirection() {
           }
           lastScrollY = scrollY > 0 ? scrollY : 0;
       };
-      window.addEventListener("scroll", updateScrollDirection); // add event listener
+      window.addEventListener("scroll", updateScrollDirection);
       return () => {
-          window.removeEventListener("scroll", updateScrollDirection); // clean up
+          window.removeEventListener("scroll", updateScrollDirection);
       }
-  }, [scrollDirection]); // run when scroll direction changes
+  }, [scrollDirection]);
 
   return scrollDirection;
 };
@@ -53,7 +53,6 @@ const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(windowWidth);
   return (
     <header className="header " >
       <div className="header__builder">
@@ -71,7 +70,7 @@ const Header = () => {
               <a href="/">Home</a>
               <a href="/about">Our Story</a>
               <a href="/services">Our Services</a>
-              <a href="/works-creative">Works</a>
+              <a href="/work">Work</a>
               <a href="/contact">Contact </a>
             </div>
             </div>):(
@@ -80,7 +79,7 @@ const Header = () => {
                 <a href="/">Home</a>
                 <a href="/about">Our Story</a>
                 <a href="/services">Our Services</a>
-                <a href="/works-creative">Works</a>
+                <a href="/work">Work</a>
                 <a href="/contact">Contact</a>
               </div>
               </div>

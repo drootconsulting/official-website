@@ -82,10 +82,6 @@ const Works2Column = () => {
           </div>
         </div>
       </div>
-      <div id="serviceFooter">
-      <Footer />
-
-      </div>
     </Layout>
   );
 };

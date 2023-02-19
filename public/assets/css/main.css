@@ -7785,6 +7785,8 @@ hr{
 
 .view-more-btn {
   text-decoration: none;
+  font-family:sans-serif;
+  font-size: 16px;
   border: 2px solid #c0c0c7;
   border-radius: 50px;
   background-color: #040407;

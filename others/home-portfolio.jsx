@@ -10,7 +10,6 @@ const PortfolioIsotope = dynamic(
 );
 
 const HomePortfolio = () => {
-  console.log("home portfolio")
   return (
     <Layout>
       <div className="wrapper">

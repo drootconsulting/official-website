@@ -230,7 +230,6 @@ const About = () => {
         </div>
         <Partners description={true}/>
       </div>
-      <Footer />
     </Layout>
   );
 };
