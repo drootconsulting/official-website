@@ -7796,12 +7796,12 @@ hr{
   background: linear-gradient(to right, #c0c0c7 50%, black 50%);
   background-size: 200% 200%;
   background-position: right bottom;
-  transition: all .2s ease-out;
-  /* -webkit-transition: all .2s ease-out; */
-
+  transition: all .3s ease-out;
 }
 .view-more-section{
   margin-top:30px;
+  display: flex;
+  justify-content: center;
 }
 
 .view-more-btn:hover{
@@ -7812,8 +7812,6 @@ hr{
 
 
 .video { 
-  /* object-fit: contain; */
-  /* display: flex; */
    width:100%;   
 }
 
@@ -7828,6 +7826,8 @@ hr{
 .read-more-btn{
   text-decoration: none;
   border: 2px solid #c0c0c7;
+  font-size: 16px;
+  font-family: sans-serif;
   border-radius: 50px;
   background-color: #040407;
   color: #c0c0c7;

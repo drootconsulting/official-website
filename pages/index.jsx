@@ -62,7 +62,7 @@ const Index = () => {
         <div className="container">
           <div className="view-more-section">
             <Link legacyBehavior href="/works-creative">
-              <button className="view-more-btn" style={{ marginTop: "20px" }}>
+              <button className="view-more-btn">
                 View More
               </button>
             </Link>

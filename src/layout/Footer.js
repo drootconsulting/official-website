@@ -13,7 +13,7 @@ const Footer = () => {
                   &#169; 2023 | Droot Consulting Private Limited
               </div>
               <div className="details-label">
-                  <a href="/privacyPolicy" 
+                  <a href="/privacy-policy" 
                   data-animate="active">Privacy Policy</a>
               </div>
               </div>

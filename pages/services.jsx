@@ -1,5 +1,3 @@
-import dynamic from "next/dynamic";
-import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";;
 import brandingPic from '../public/assets/images/branding.svg';
 import strategyPic from '../public/assets/images/strategy.svg';
@@ -17,7 +15,6 @@ const Works2Column = () => {
     document.getElementById('more2').style.display = "none";
     document.getElementById('more3').style.display = "none";
     document.getElementById('more4').style.display = "none"
-    // document.getElementById('serviceFooter').style.paddingBottom = '22rem';
     return () => {
 
     }
@@ -33,7 +30,6 @@ const Works2Column = () => {
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Read less";
-      // document.getElementById('serviceFooter').style.paddingBottom = 'rem';
 
     } else {
       dots.style.display = "none";
