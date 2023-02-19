@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { home1SliderProps } from "../../sliderProps";
-import { data } from "../../data";
+import { carouselData } from "../../data";
 const HeroSwiper =()=>{
    return(
     <>
@@ -8,7 +8,7 @@ const HeroSwiper =()=>{
     <div className="wrapper" id="swipper"> 
         <Swiper {...home1SliderProps}   className="section hero-main-slider" >
           {
-            data.map((item) => (
+            carouselData.map((item) => (
               <SwiperSlide className="swiper-slide" data-color="dark" key={item.id}
               >
                   <div className="slide" style={{ margin: "auto", display: 'flex', width: '100%', height: '100%', backgroundColor: '#0D0D0D', justifyContent: 'center', alignItems: 'center', overflow: "hidden" }}>

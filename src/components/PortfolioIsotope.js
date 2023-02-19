@@ -48,13 +48,13 @@ const PortfolioIsotope = () => {
           <div className="works-items row column-2-offset">
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-photography">
               <div className="works-item">
-                <Link legacyBehavior href="/downtown-work">
+                <Link legacyBehavior href="/projects/downtown-club">
                   <a>
                     <span className="image">
                       <span className="img">
                         <Image
                           src={downtownPic}
-                          alt="Downtown"
+                          alt="Downtown Club"
                           style={{ height: '100%', width: '100%' }}
                         />
                       </span>
@@ -81,7 +81,7 @@ const PortfolioIsotope = () => {
             </div>
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-art">
               <div className="works-item">
-                <Link legacyBehavior href="/bhaskar-jyoti-work">
+                <Link legacyBehavior href="/projects/bhaskar-jyoti">
                   <a>
                     <span className="image">
                       <span className="img">
@@ -118,7 +118,7 @@ const PortfolioIsotope = () => {
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <Link legacyBehavior href="/ultra-work">
+                <Link legacyBehavior href="/projects/ultra">
                   <a>
                     <span className="image">
                       <span className="img">
@@ -154,7 +154,7 @@ const PortfolioIsotope = () => {
                 className="works-item scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                <Link legacyBehavior href="/slnko-work">
+                <Link legacyBehavior href="/projects/slnko-energy">
                   <a>
                     <span className="image">
                       <span className="img">
