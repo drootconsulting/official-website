@@ -37,8 +37,8 @@ const WorkSingle = () => {
         >
           <div>
             <video className="img js-parallax"
-              src="assets/videos/ultraVideo.mp4"
-              alt="u1" muted loop autoPlay style={{width:"100%",height:'100%'}}/>
+              src="../assets/videos/ultraVideo.mp4"
+              alt="u1" muted loop autoPlay style={{width:"100%",height:'100%', backgroundColor: 'blue'}}/>
           </div>
         </div>
         <div className="section section-inner m-details">
