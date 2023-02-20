@@ -9,7 +9,7 @@ import baj4 from '../../public/assets/images/baj4.webp';
 const WorkSingle = () => {
   return (
     <Layout>
-      <div className="wrapper" style={{backgroundColor:"#2f2f2f"}}>
+      <div className="wrapper">
         <div className="section section-inner started-heading">
           <div className="container">
             <div className="row">
