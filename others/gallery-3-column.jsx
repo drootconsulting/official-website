@@ -17,7 +17,6 @@ const Gallery2Column = () => {
         {/* Section Works */}
         <Gallery3Isotope />
       </div>
-      <Footer />
     </Layout>
   );
 };

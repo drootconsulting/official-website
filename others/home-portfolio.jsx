@@ -48,7 +48,6 @@ const HomePortfolio = () => {
         <Partners />
       </div>
       {/* Footer */}
-      <Footer />
     </Layout>
   );
 };

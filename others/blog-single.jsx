@@ -261,7 +261,6 @@ const BlogSingle = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 };

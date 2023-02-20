@@ -12,7 +12,6 @@ const Works2Column = () => {
         <PageTitle title="Projects" />
         <Work3Isotope />
       </div>
-      <Footer />
     </Layout>
   );
 };

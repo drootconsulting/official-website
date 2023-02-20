@@ -178,7 +178,6 @@ const WorkSingle = () => {
         </div>
         {/* Section Gallery Carousel */}
       </div>
-      <Footer />
     </Layout>
   );
 };
