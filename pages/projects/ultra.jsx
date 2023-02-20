@@ -163,7 +163,6 @@ const WorkSingle = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 };
