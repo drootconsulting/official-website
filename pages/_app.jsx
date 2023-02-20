@@ -3,7 +3,13 @@ import { Fragment, useEffect, useState } from "react";
 import Preloader from "../src/layout/Preloader";
 import "../styles/globals.css";
 import ReactGA from 'react-ga';
-
+import '../public/assets/css/vendors/bootstrap.css';
+import '../public/assets/css/vendors/magnific-popup.css';
+import '../public/assets/css/vendors/splitting.css';
+import '../public/assets/fonts/font-awesome/css/font-awesome.css';
+import '../public/assets/css/vendors/swiper.css';
+import '../public/assets/css/vendors/animate.css';
+import  '../public/assets/css/main.css';
 const App = ({ Component, pageProps }) => {
   const [loader, setLoader] = useState(true);
   ReactGA.initialize('UA-157989853-1');
@@ -33,54 +39,6 @@ const App = ({ Component, pageProps }) => {
           type="text/css"
           media="all"
         />
-
-        {/* CSS STYLES */}
-
-        <link
-          rel="stylesheet"
-          href="assets/css/vendors/bootstrap.css"
-          type="text/css"
-          media="all"
-        />
-        <link
-          rel="stylesheet"
-          href="assets/fonts/font-awesome/css/font-awesome.css"
-          type="text/css"
-          media="all"
-        />
-        <link
-          rel="stylesheet"
-          href="assets/css/vendors/magnific-popup.css"
-          type="text/css"
-          media="all"
-        />
-        <link
-          rel="stylesheet"
-          href="assets/css/vendors/splitting.css"
-          type="text/css"
-          media="all"
-        />
-        <link
-          rel="stylesheet"
-          href="assets/css/vendors/swiper.css"
-          type="text/css"
-          media="all"
-        />
-        <link
-          rel="stylesheet"
-          href="assets/css/vendors/animate.css"
-          type="text/css"
-          media="all"
-        />
-
-        <link
-          rel="stylesheet"
-          href="assets/css/main.css"
-          type="text/css"
-          media="all"
-        />
-
-        {/* <link rel="stylesheet" href="assets/css/main.css"></link> */}
 
         {/*[if lt IE 9]><![endif]*/}
         {/* Favicon */}

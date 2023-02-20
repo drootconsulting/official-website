@@ -5461,7 +5461,7 @@ input.search-submit,
   top: 50%;
   width: 16px;
   height: 16px;
-  background: url(../images/search.svg) no-repeat center center;
+  /* background: url(../images/search.svg) no-repeat center center; */
   background-size: contain;
   font-size: 0;
   -webkit-filter: brightness(0) invert(1);
@@ -7631,7 +7631,12 @@ body
   background-color: #c0c0c7;
 }
 
+/* for small devices add btn classes */
 
+
+
+
+/* for small devices and btn classes */
 .menu-btn:hover {
   cursor: pointer;
 }
@@ -7841,4 +7846,12 @@ hr{
       .video{
         height:100%;
       }
+}
+
+.h-titles a{
+  color:#f4f4f7;
+}
+.footer__build{
+  text-align: center;
+  justify-content: space-between;
 }

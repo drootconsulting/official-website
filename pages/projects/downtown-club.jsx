@@ -1,10 +1,9 @@
-
-import Footer from "../../src/layout/Footer";
 import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
 import downtownCard1 from '../../public/assets/images/downtownCard1.png';
 import downtownCycle from '../../public/assets/images/downtownCycle.webp';
 import downtownCards2 from '../../public/assets/images/downtownCards2.webp';
+import Link from "next/link";
 
 const WorkSingle = () => {
   return (
@@ -66,7 +65,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> <a href="https://thedowntown.club/" target="_blank">thedowntown</a>
+                    <strong>Website</strong> <Link href="https://thedowntown.club/" target="_blank">thedowntown</Link>
                   </div>
                 </div>
               </div>

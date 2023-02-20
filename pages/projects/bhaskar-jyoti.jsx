@@ -1,11 +1,9 @@
-
-import Footer from "../../src/layout/Footer";
 import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
 import baj2 from '../../public/assets/images/baj2.webp';
 import baj33 from '../../public/assets/images/baj33.jpg';
 import baj4 from '../../public/assets/images/baj4.webp';
-
+import Link from "next/link";
 const WorkSingle = () => {
   return (
     <Layout>
@@ -66,7 +64,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> <a href="https://bhaskarjyoti.com/" target="_blank">bhaskarjyoti</a>
+                    <strong>Website</strong> <Link href="https://bhaskarjyoti.com/" target="_blank">bhaskarjyoti</Link>
                   </div>
                 </div>
               </div>
