@@ -1,11 +1,11 @@
 import Layout from "../src/layout/Layout";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import Partners from "../src/components/Partners";
 import HeroSwiper from "../src/components/home/HeroSwiper";
 import ServicesSection from "../src/components/home/ServicesSection";
-const PortfolioIsotope = dynamic(
-  () => import("../src/components/PortfolioIsotope"),
+import Clients from "../src/components/Clients";
+const Projects = dynamic(
+  () => import("../src/components/ProjectsCard"),
   {
     ssr: false,
   }
@@ -57,11 +57,11 @@ const Index = () => {
           </h2>
         </div>
       </div>
-      <PortfolioIsotope />
+      <Projects />
       <div className=" view-more-projects" data-animate="active">
         <div className="container">
           <div className="view-more-section">
-            <Link legacyBehavior href="/works-creative">
+            <Link legacyBehavior href="/work">
               <button className="view-more-btn">
                 View More
               </button>
@@ -69,7 +69,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <Partners />
+      <Clients />
     </Layout>
   );
 };

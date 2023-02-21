@@ -28,7 +28,7 @@ const List =({client, index})=>{
   )
 }
 
-const Partners = ({description}) => {
+const Clients = ({description}) => {
 
   return (
     <div className="section section-inner m-partners">
@@ -61,4 +61,4 @@ const Partners = ({description}) => {
     </div>
   );
 };
-export default Partners;
+export default Clients;

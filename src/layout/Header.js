@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import drootLogoPic from "../../public/assets/images/drootlogoW.png";
 import ReactGA from 'react-ga';
-
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -56,42 +55,40 @@ const Header = () => {
           style={{ display: scrollDirection === "down" ? "none" : "block" }}
         >
           <Link legacyBehavior href="/">
-            <a>
               <Image
                 src={drootLogoPic}
                 alt="logo"
                 style={{ width: "150px", height: "50px" }}
                 className="img"
               />
-            </a>
           </Link>
         </div>
 
         {windowWidth < 1100 ? (
           <div className="menu-btn">
-            <button className="btnn" onClick={openMenuBar}>
+            <button className ="btnn" onClick={openMenuBar}>
               Menu
             </button>
             <div
               className="dropdown_menu dropdown_menu--animated  dropdown_menu-8"
               style={{ display: isOpen ? "block" : "none" }}
             >
-              <a href="/">Home</a>
-              <a href="/about">Our Story</a>
-              <a href="/services">Our Services</a>
-              <a href="/work">Work</a>
-              <a href="/contact">Contact </a>
+              <Link href ="/" onClick={()=>setIsOpen(false)}>Home</Link>
+              <Link href="/about" onClick={()=>setIsOpen(false)}>Our Story</Link>
+              <Link href="/services" onClick={()=>setIsOpen(false)}>Our Services</Link>
+              <Link href="/work" onClick={()=>setIsOpen(false)}>Work</Link>
+              <Link href="/contact" onClick={()=>setIsOpen(false)}>Contact </Link>
             </div>
           </div>
         ) : (
           <div className="menu-btn">
             <button className="btnn">Menu</button>
             <div className="dropdown_menu dropdown_menu--animated  dropdown_menu-8">
-              <a href="/">Home</a>
-              <a href="/about">Our Story</a>
-              <a href="/services">Our Services</a>
-              <a href="/work">Work</a>
-              <a href="/contact">Contact</a>
+              <Link href="/">Home</Link>
+              <Link href="/about">Our Story</Link>
+              <Link href="/services">Our Services</Link>
+              <Link href="/work">Work</Link>
+              <Link href="/contact">Contact</Link>
             </div>
           </div>
         )}

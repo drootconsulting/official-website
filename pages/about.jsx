@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-// import AboutVideo from "../src/components/AboutVideo";
-import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
-import Partners from "../src/components/Partners";
+import Clients from "../src/components/Clients";
 import { jsTestimonials } from "../src/sliderProps";
 import Image from "next/image";
 import story from "../public/assets/images/story.jpg";
@@ -228,7 +226,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Partners description={true}/>
+        <Clients description={true}/>
       </div>
     </Layout>
   );

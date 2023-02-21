@@ -1,9 +1,8 @@
-import Footer from "../../src/layout/Footer";
 import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
 import u2 from '../../public/assets/images/ub2.webp';
 import u3 from '../../public/assets/images/u3.webp';
-
+import Link from "next/link";
 const WorkSingle = () => {
   return (
     <Layout>
@@ -38,7 +37,7 @@ const WorkSingle = () => {
           <div>
             <video className="img js-parallax"
               src="../assets/videos/ultraVideo.mp4"
-              alt="u1" muted loop autoPlay style={{width:"100%",height:'100%', backgroundColor: 'blue'}}/>
+              alt="u1" muted loop autoPlay style={{width:"100%",height:'100%'}}/>
           </div>
         </div>
         <div className="section section-inner m-details">
@@ -62,7 +61,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong>  <a href="https://ultraservices.in/" target="_blank">ultraservices</a>
+                    <strong>Website</strong>  <Link href="https://ultraservices.in/" target="_blank">ultraservices</Link>
                   </div>
                 </div>
               </div>

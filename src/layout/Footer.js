@@ -7,18 +7,23 @@ const Footer = () => {
       <div className="footer__builder" style={{paddingTop:"50px", paddingBottom:"50px"}}>
         <div className="container align-center">
           <div className="row footer__build">
-            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{textAlign:"left"}}>
-              <div className="h-titles copyright" style={{display:"flex", justifyContent: 'space-between'}}>
+            
+            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+              <div className="h-titles">
               <div style={{fontWeight: 300, color: "#f4f4f7"}}>
                   &#169; 2023 | Droot Consulting Private Limited
               </div>
-              <div className="details-label">
+              </div>
+              </div>
+
+              <div className="details-label col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div className="h-titles">
                   <a href="/privacy-policy" 
                   data-animate="active">Privacy Policy</a>
               </div>
               </div>
-            </div>
-            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{textAlign:"right"}}>
+
+            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
               <div className="h-titles">
               <div className="social-links footer-social-links"> 
                 <a

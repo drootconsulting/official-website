@@ -49,7 +49,7 @@ const PortfolioIsotope = () => {
             <div className="works-col col-xs-12 col-sm-6 col-md-6 col-lg-6 sorting-photography">
               <div className="works-item">
                 <Link legacyBehavior href="/projects/downtown-club">
-                  <a>
+                 <a>
                     <span className="image">
                       <span className="img">
                         <Image
@@ -75,7 +75,7 @@ const PortfolioIsotope = () => {
                         Downtown Club
                       </span>
                     </span>
-                  </a>
+                    </a>
                 </Link>
               </div>
             </div>
@@ -108,7 +108,7 @@ const PortfolioIsotope = () => {
                         Bhaskar Jyoti
                       </span>
                     </span>
-                  </a>
+                    </a>
                 </Link>
               </div>
             </div>
@@ -145,7 +145,7 @@ const PortfolioIsotope = () => {
                         Ultra
                       </span>
                     </span>
-                  </a>
+                    </a>
                 </Link>
               </div>
             </div>
@@ -181,11 +181,10 @@ const PortfolioIsotope = () => {
                         Slnko
                       </span>
                     </span>
-                  </a>
+                    </a>
                 </Link>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

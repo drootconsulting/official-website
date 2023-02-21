@@ -82,3 +82,34 @@ export const clientData = [
     }
 
 ];
+
+export const servicesData = [
+    {
+        id: 1,
+        title:"Strategy",
+        content:"We help businesses develop and implement effective strategies that can drive success in a competitive marketplace. Our services include market research, data analysis, user experience, and working closely with business leaders to understand their unique challenges and goals.By leveraging our experience and expertise, we help businesses gain a fresh perspective, identify growth opportunities, and achieve their long-term objectives.",
+        span_id:"span1",
+        btn_id:"myBtn1"
+    },
+    {
+        id: 2,
+        title:"Branding & Design",
+        content:"For Droot, branding and design are crucial for establishing a unique identity and presence in the market. we create a unique name, image, and overall identity for the company, while creating visual and functional elements that contribute to our client’s identity and message. Both branding and design are important for building trust with customers and, fostering brand loyalty.",
+        span_id:"span2",
+        btn_id:"myBtn2"
+    },
+    {
+        id: 3,
+        title:"Digital Development",
+        content:"Droot provides digital development solutions,including website and app development, e-commerce, digital marketing, and social media management. Our team creates and manages digital products that meet user needs and behaviors while leveraging digital tools effectively. Our digital development services enable our clients to build a powerful online presence and effectively engage with their target audience.",
+        span_id:"span3",
+        btn_id:"myBtn3"
+    },
+    {
+        id: 4,
+        title:"Content Production",
+        content:"Our services, includes the creation and publication of articles, videos, and social media posts. Our team develops comprehensive content strategies that deliver engaging content to your target audience. We utilize our deep understanding of your audience's preferences and behaviors to create effective and compelling content that builds brand awareness and fosters audience engagement.",
+        span_id:"span4",
+        btn_id:"myBtn4"
+    }
+];

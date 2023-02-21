@@ -1,11 +1,9 @@
-
-import Footer from "../../src/layout/Footer";
 import Layout from "../../src/layout/Layout";
 import Image from 'next/image';
 import slnkoPic1 from '../../public/assets/images/slnko1.jpg';
 import slnkoPic3 from '../../public/assets/images/vbrochure3.jpg';
 import slnkoPic4 from '../../public/assets/images/vbrochure4.jpg';
-
+import Link from "next/link";
 const WorkSingle = () => {
   return (
     <Layout>
@@ -73,7 +71,7 @@ const WorkSingle = () => {
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                   <div className="details-label">
-                    <strong>Website</strong> <a href="https://slnkoenergy.com/" target="_blank">slnkoenergy</a>
+                    <strong>Website</strong> <Link href="https://slnkoenergy.com/" target="_blank">slnkoenergy</Link>
                   </div>
                 </div>
               </div>

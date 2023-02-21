@@ -1,9 +1,8 @@
 import dynamic from "next/dynamic";
-import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import PageTitle from "../src/layout/PageTitle";
-const PortfolioIsotope = dynamic(
-  () => import("../src/components/PortfolioIsotope"),
+const Projects = dynamic(
+  () => import("../src/components/ProjectsCard"),
   {
     ssr: false,
   }
@@ -13,7 +12,7 @@ const Work = () => {
     <Layout>
       <div className="wrapper">
         <PageTitle title="Projects" />
-        <PortfolioIsotope />
+        <Projects />
       </div>
     </Layout>
   );
