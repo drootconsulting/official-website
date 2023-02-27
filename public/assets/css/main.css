@@ -7256,6 +7256,9 @@ a.wp-block-button__link {
     > .col-xs-12:first-child {
     margin-top: 0;
   }
+  .services-opt{
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -7453,6 +7456,7 @@ a.wp-block-button__link {
   .location-1{
     margin-top:50px;
   }
+
 }
 
 body .js-testimonials {
@@ -7574,6 +7578,7 @@ body
   .section.full-slider .slide-titles {
     bottom: 40px;
   }
+
 }
 
 .mfp-close:before {
@@ -7736,6 +7741,7 @@ body
   .services-title{
     justify-content: center;
   }
+  
 }
 
 hr{
@@ -7823,7 +7829,28 @@ hr{
 }
 
 .services-opt{
-  margin-top: 2rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  opacity:0.9;
+}
+.services-opt:hover{
+  opacity:1;
+
+}
+.service-page-detail{
+  
+}
+.services-sub-heading{
+  margin-bottom: 0.3rem;
+}
+
+.services-title{
+  margin-top:1rem;
+  margin-bottom:0
+}
+.services-content{
+  margin-bottom:120px;
+  margin-top:100px;
 }
 
 /* .hide{
@@ -7855,3 +7882,4 @@ hr{
   text-align: center;
   justify-content: space-between;
 }
+

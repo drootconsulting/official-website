@@ -6,6 +6,7 @@ import contentPic from '../public/assets/images/content.svg';
 import Image from "next/image";
 import { useEffect } from "react";
 import PageTitle from "../src/layout/PageTitle";
+import Link from 'next/link'
 const Works2Column = () => {
 
 
@@ -44,37 +45,60 @@ const Works2Column = () => {
       }}> 
       <PageTitle title="Our Services" />
         {/* Section Works */}
-        <div className="container" style={{ marginTop: "1rem",marginBottom:'1rem' }}>
+        <div className="container" style={{ marginTop: "5rem",marginBottom:'1rem' }}>
           <div className="row">
+            
             <div className="services-opt col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+            <Link href={{ pathname: 'service', query: { name: 'Strategy' }}} className="service-page-detail">
               <Image src={strategyPic} alt="strategy" width="80" height="80" />
               <h5>Strategy</h5>
-              <p style={{ lineHeight: "normal" }}>We help businesses develop and implement effective strategies <span id="more1" className="hide">
-                that can drive success in a competitive marketplace. Our services include market research, data analysis, user experience, and working closely with business leaders to understand their unique challenges and goals.
-                By leveraging our experience and expertise, we help businesses gain a fresh perspective, identify growth opportunities, and achieve their long-term objectives.
+              </Link>
+              <p style={{ lineHeight: "normal" }}>We help businesses to develop and implement effective strategies
+              that can drive <span id="more1" className="hide">success in a  competitive marketplace. Our services include market research, data analysis, user experience, and working closely with business leaders to understand their unique challenges and goals. By leveraging our experience and expertise, we help businesses to gain a fresh and unique perspective, identify growth opportunities, and achieve their long-term objectives.
               </span> </p>
-              <button onClick={() => functionReadMore('more1', 'myBtn1')} id="myBtn1" className="read-more-btn">Read more</button>
+              <Link href={{ pathname: 'service', query: { name: 'Strategy' }}} >
+              <button  id="myBtn1" className="read-more-btn">View more</button>
+              </Link>
             </div>
+           
+            
             <div className="services-opt col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+            <Link href={{ pathname: 'service', query: { name: 'Branding & Design' }}} className="service-page-detail">
               <Image src={brandingPic} alt="design" width="80" height="80" />
               <h5>Branding & Design</h5>
-              <p style={{ lineHeight: "normal" }}>For Droot, branding and design are crucial for establishing a <span id="more2" className="hide">unique identity and presence in the market. we create a unique name, image, and overall identity for the company, while creating visual and functional elements that contribute to our client’s identity and message. Both branding and design are important for building trust with customers and, fostering brand loyalty. </span>  </p>
-
-              <button onClick={() => functionReadMore('more2', 'myBtn2')} id="myBtn2" className="read-more-btn">Read more</button>
-
+              </Link>
+              <p style={{ lineHeight: "normal" }}>Establishing a unique identity and presence for our clients in the market is very essential<span id="more2" className="hide"> for our team. we create a unique name, image, and overall identity for the company while creating visual and functional elements that contribute to our client identity and message. Both branding and design are important for building trust with customers and, encouraging brand loyalty.
+              </span>  </p>
+              <Link href={{ pathname: 'service', query: { name: 'Branding & Design' }}} className="service-page-detail">
+              <button  id="myBtn2" className="read-more-btn">View more</button>
+              </Link>
             </div>
+           
+            
             <div className="services-opt col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <Link href={{ pathname: 'service', query: { name: 'Digital Development' }}} className="service-page-detail">
               <Image src={digitalPic} alt="digital development" width="80" height="80" />
               <h5>Digital Development</h5>
-              <p style={{ lineHeight: "normal" }}>Droot provides digital development solutions,<span id="more3" className="hide">including website and app development, e-commerce, digital marketing, and social media management. Our team creates and manages digital products that meet user needs and behaviors while leveraging digital tools effectively. Our digital development services enable our clients to build a powerful online presence and effectively engage with their target audience.</span> </p>
-              <button onClick={() => functionReadMore('more3', 'myBtn3')} id="myBtn3" className="read-more-btn">Read more</button>
+              </Link>
+              <p style={{ lineHeight: "normal" }}>Whether you need a customized web application, a mobile app, or a complex software system,<span id="more3" className="hide"> our developers provide comprehensive software development services that incorporate the latest technologies and features. We design, develop, test, and deploy efficient, reliable, and scalable web and mobile applications for Android and IOS while giving close attention to the UI/UX to ensure that our applications are both functional and visually appealing, as well as user-friendly.
+            </span> </p>
+            <Link href={{ pathname: 'service', query: { name: 'Digital Development' }}} className="service-page-detail">
+              <button id="myBtn3" className="read-more-btn">View more</button>
+              </Link>
             </div>
+           
+            
             <div className=" services-opt col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <Link href={{ pathname: 'service', query: { name: 'Content Production' }}} className="service-page-detail">
               <Image src={contentPic} alt="content Production" width="80" height="80" />
               <h5>Content Production</h5>
-              <p style={{ lineHeight: "normal" }}>Our services, includes the creation and publication of <span id="more4" className="hide">articles, videos, and social media posts. Our team develops comprehensive content strategies that deliver engaging content to your target audience. We utilize our deep understanding of your audience's preferences and behaviors to create effective and compelling content that builds brand awareness and fosters audience engagement.</span> </p>
-              <button onClick={() => functionReadMore('more4', 'myBtn4')} id="myBtn4" className="read-more-btn">Read more</button>
+              </Link>
+              <p style={{ lineHeight: "normal" }}>We aim to help you establish thought leadership, engage with your audience, and <span id="more4" className="hide">increase conversions by creating compelling articles, blogs, and videos that enhance your digital marketing strategy. Our comprehensive approach to content production covers ideation, research, creation, optimization, and distribution, ensuring that the end result is high-quality and SEO-friendly content that conveys your brand's objectives.</span> </p>
+                <Link href={{ pathname: 'service', query: { name: 'Content Production' }}} >
+              <button  id="myBtn4" className="read-more-btn">View more</button>
+              </Link>
             </div>
+            
           </div>
         </div>
       </div>
