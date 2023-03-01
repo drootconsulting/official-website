@@ -76,7 +76,7 @@ const ServicesSection = () => {
                         height="80"
                       />
                     </div>
-                    <div className="name">Digital Development</div>
+                    <div className="name">Software Development</div>
                     <div className="text">
                       Focused on creating, publishing, and distributing content
                       for a targeted audience online.
