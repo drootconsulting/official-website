@@ -1,46 +1,46 @@
 
-require('dotenv').config();
-const PASSWORD = process.env.password;
-console.log("api endpoints ")
-const express = require('express');
-const app = express();
-app.use(express.json());
+// require('dotenv').config();
+// const PASSWORD = process.env.password;
+// console.log("api endpoints ")
+// const express = require('express');
+// const app = express();
+// app.use(express.json());
 
-export default function (req, res) {
-    console.log(" apirequest ", req.body)
-    let nodemailer = require('nodemailer');
-    const transporter = nodemailer.createTransport({
-        port: 465,
-        host: "smtp.gmail.com",
-        auth: {
-            user: 'drootdummy23@gmail.com',
-            pass: PASSWORD,
-        },
-        secure: true,
-    });
-    console.log("resolved",req.body)
+// export default function (req, res) {
+//     console.log(" apirequest ", req.body)
+//     let nodemailer = require('nodemailer');
+//     const transporter = nodemailer.createTransport({
+//         port: 465,
+//         host: "smtp.gmail.com",
+//         auth: {
+//             user: 'drootdummy23@gmail.com',
+//             pass: PASSWORD,
+//         },
+//         secure: true,
+//     });
+//     console.log("resolved",req.body)
 
-    const mailData = {
-        from:'drootdummy23@gmail.com',
-        to: 'drootdummy23@gmail.com',
-        subject: `Message From ${req.body.name}`,
-        text: req.body.message,
-        html: `<div> Hi droot, </div>
-        <div>${req.body.message}</div>
-        <div>Thanks <br>${req.body.name}</div>
-        <div>Message sent from  ${req.body.email}</div>`
-       }
-       transporter.sendMail(mailData, function (err, info) {
-        console.log("sending email");
-        if(err)
-          console.log(err)
-        else
-          console.log(info);
+//     const mailData = {
+//         from:'drootdummy23@gmail.com',
+//         to: 'drootdummy23@gmail.com',
+//         subject: `Message From ${req.body.name}`,
+//         text: req.body.message,
+//         html: `<div> Hi droot, </div>
+//         <div>${req.body.message}</div>
+//         <div>Thanks <br>${req.body.name}</div>
+//         <div>Message sent from  ${req.body.email}</div>`
+//        }
+//        transporter.sendMail(mailData, function (err, info) {
+//         console.log("sending email");
+//         if(err)
+//           console.log(err)
+//         else
+//           console.log(info);
           
-      })
-      res.status(200).send();
+//       })
+//       res.status(200).send();
       
-  }
+//   }
 
 
 

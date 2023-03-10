@@ -1,53 +1,13 @@
-import { useState } from "react";
-import Footer from "../src/layout/Footer";
 import Layout from "../src/layout/Layout";
 import PageTitle from "../src/layout/PageTitle";
-import axios from 'axios';
 import Image from 'next/image';
 import mumbaiPic from '../public/assets/images/mumbai.jpg';
 import noidaPic from "../public/assets/images/noida.jpg";
-
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import ContactForm from "../src/components/ContactForm";
 const Contact = () => {
-  const [contactInfo, setContactInfo] = useState({
-    name: "",
-    email: "",
-    message: ""
-  })
 
-  const handleInputChange = (e) => {
-    setContactInfo({
-      ...contactInfo,
-      [e.target.name]: e.target.value
-    })
-
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("trigger");
-    let data = { name: contactInfo.name, email: contactInfo.email, message: contactInfo.message }
-    fetch('/api/contactsApi', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-      console.log("data", data);
-      console.log('Response received')
-      if (res.status === 200) {
-        console.log('Response succeeded!')
-        setContactInfo({
-          name: "",
-          email: "",
-          message: ""
-        })
-      }
-    })
-
-    console.log("contactInfo", contactInfo);
-  }
+  const postUrl = `https://droot.us18.list-manage.com/subscribe/post?u=0736c2c9dbd48bfdc69b8d88f&id=61d41d7035`
 
   return (
     <Layout>
@@ -66,60 +26,17 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="contacts-form">
-                  <form id="cform" method="post" onSubmit={handleSubmit}>
-                    <div className="group">
-                      <div
-                        className="value scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Full Name"
-                          value={contactInfo.name}
-                          onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224", outline: "none", fontFamily: "sans-serif" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="group">
-                      <div
-                        className="value scrolla-element-anim-1 scroll-animate"
-                        data-animate="active"
-                      >
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Email Address"
-                          value={contactInfo.email}
-                          onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224", fontFamily: "sans-serif" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="group full">
-                      <div
-                        className="value scrolla-element-anim-1 scroll-animate"
-                        data-animate="active">
-                        <textarea
-                          type="text"
-                          name="message"
-                          placeholder="Message"
-                          value={contactInfo.message}
-                          onChange={handleInputChange}
-                          style={{ backgroundColor: "#1C2224", border: "none", fontFamily: "sans-serif" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="submit scrolla-element-anim-1 scroll-animate"
-                      data-animate="active"
-                    >
-                      <button className="btn" style={{ border: "2px solid #c0c0c7", borderRadius: "50px" }}>
-                        Submit
-                      </button>
-                    </div>
-                  </form>
+                  <MailchimpSubscribe
+                    url={postUrl}
+                    render={({ subscribe, status, message }) => (
+                      <ContactForm
+                        status={status}
+                        message={message}
+                        onValidated={formData => subscribe(formData)}
+                      />
+                    )}
+                  />
+                  {/* */}
                   <div className="alert-success" style={{ display: "none" }}>
                     <p>Thanks, your message is sent successfully.</p>
                   </div>
@@ -164,7 +81,7 @@ const Contact = () => {
                   </div>
                   <a className="contact" href="mailto:info@droot.in">info@droot.in</a>
                   <address className="contact address">
-                  HD-299, Enam Sambhav, C-20, <br />
+                    HD-299, Enam Sambhav, C-20, <br />
                     G Block Rd, Bandra Kurla Complex, <br />
                     Mumbai, Maharashtra 400051
                   </address>
